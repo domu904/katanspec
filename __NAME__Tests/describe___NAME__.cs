@@ -6,7 +6,7 @@ using NSpec;
 
 namespace __NAME__Tests
 {
-    class kata : nspec
+    class describe___NAME__ : nspec
     {
         void it_works()
         {
