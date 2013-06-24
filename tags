@@ -34,10 +34,8 @@ TestRunner	.\watcher_dot_net.rb	/^class TestRunner$/;"	c
 WatcherDotNet	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^class WatcherDotNet$/;"	c
 WatcherDotNet	.\watcher_dot_net.rb	/^class WatcherDotNet$/;"	c
 __NAME__	.\__NAME__\Person.cs	/^namespace __NAME__$/;"	n
-__NAME__Tests	.\__NAME__Tests\describe_Person.cs	/^namespace __NAME__Tests$/;"	n
 add_compile_node	.\Rakefile.rb	/^def add_compile_node folder, name, project$/;"	f
 add_include	.\Rakefile.rb	/^def add_include doc, type, value$/;"	f
-befor_each	.\__NAME__Tests\describe_Person.cs	/^        void befor_each()$/;"	m	class:__NAME__Tests.describe_Person	file:
 build_cmd	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def build_cmd file$/;"	f	class:MSBuilder
 build_cmd	.\watcher_dot_net.rb	/^  def build_cmd file$/;"	f	class:MSBuilder
 consider	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def consider file$/;"	f	class:WatcherDotNet
@@ -46,7 +44,6 @@ contained_in_test_project	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^ 
 contained_in_test_project	.\watcher_dot_net.rb	/^  def contained_in_test_project file$/;"	f	class:NSpecRunner
 debug	.\__NAME__Tests\DebuggerShim.cs	/^    public void debug()$/;"	m	class:DebuggerShim
 debug	.\packages\nspec.0.9.58\content\DebuggerShim.cs	/^    public void debug()$/;"	m	class:DebuggerShim
-describe_Person	.\__NAME__Tests\describe_Person.cs	/^    class describe_Person : nspec$/;"	c	namespace:__NAME__Tests
 execute	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def execute cmd$/;"	f	class:CommandShell
 execute	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def execute test_name$/;"	f	class:NSpecRunner
 execute	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def execute test_name$/;"	f	class:NUnitRunner
@@ -99,7 +96,6 @@ initialize	.\watcher_dot_net.rb	/^  def initialize folder$/;"	f	class:NUnitRunne
 initialize	.\watcher_dot_net.rb	/^  def initialize folder$/;"	f	class:RakeBuilder
 initialize	.\watcher_dot_net.rb	/^  def initialize folder$/;"	f	class:TestRunner
 initialize	.\watcher_dot_net.rb	/^  def initialize folder, config $/;"	f	class:WatcherDotNet
-it_works	.\__NAME__Tests\describe_Person.cs	/^        void it_works()$/;"	m	class:__NAME__Tests.describe_Person	file:
 model_template	.\Rakefile.rb	/^def model_template name$/;"	f
 ms_build_path	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def self.ms_build_path$/;"	F	class:MSBuilder
 ms_build_path	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def self.ms_build_path= value$/;"	F	class:MSBuilder
