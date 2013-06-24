@@ -78,3 +78,7 @@ def add_compile_node folder, name, project = nil
   end
   File.open(to_open, "w") { |f| f.write(doc) }
 end
+
+def add_include doc, type, value
+  doc.xpath("//xmlns:ItemGroup[xmlns:#{type.to_s}]").first << "<#{type.to_s} Include=\"#{value}\" />"
+end
