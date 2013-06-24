@@ -25,6 +25,10 @@ task :ctags do
   sh "ctags --recurse"
 end
 
+def verify_file_name name
+  raise "You cant use #{name} as the name. No spaces or fancy characters please." if name =~ /[\x00\/\\:\*\?\"<>\|]/ || name =~ / /
+end
+
 def model_template name
 return <<template
 using System;
