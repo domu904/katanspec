@@ -57,6 +57,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using NSpec;
+using __NAME__;
 
 namespace __NAME__Tests
 {

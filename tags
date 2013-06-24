@@ -10,7 +10,6 @@ DebuggerShim	.\__NAME__Tests\DebuggerShim.cs	/^public class DebuggerShim$/;"	c
 DebuggerShim	.\packages\nspec.0.9.58\content\DebuggerShim.cs	/^public class DebuggerShim$/;"	c
 GrowlNotifier	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^class GrowlNotifier$/;"	c
 GrowlNotifier	.\watcher_dot_net.rb	/^class GrowlNotifier$/;"	c
-Hello	.\__NAME__\Person.cs	/^        void Hello()$/;"	m	class:__NAME__.Person	file:
 MSBuilder	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^class MSBuilder$/;"	c
 MSBuilder	.\watcher_dot_net.rb	/^class MSBuilder$/;"	c
 MSTestRunner	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^class MSTestRunner < TestRunner$/;"	c
@@ -36,8 +35,9 @@ WatcherDotNet	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^class Watcher
 WatcherDotNet	.\watcher_dot_net.rb	/^class WatcherDotNet$/;"	c
 __NAME__	.\__NAME__\Person.cs	/^namespace __NAME__$/;"	n
 __NAME__Tests	.\__NAME__Tests\describe_Person.cs	/^namespace __NAME__Tests$/;"	n
-add_compile_node	.\Rakefile.rb	/^def add_compile_node folder, name, project = nil$/;"	f
+add_compile_node	.\Rakefile.rb	/^def add_compile_node folder, name, project$/;"	f
 add_include	.\Rakefile.rb	/^def add_include doc, type, value$/;"	f
+befor_each	.\__NAME__Tests\describe_Person.cs	/^        void befor_each()$/;"	m	class:__NAME__Tests.describe_Person	file:
 build_cmd	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def build_cmd file$/;"	f	class:MSBuilder
 build_cmd	.\watcher_dot_net.rb	/^  def build_cmd file$/;"	f	class:MSBuilder
 consider	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def consider file$/;"	f	class:WatcherDotNet
@@ -123,7 +123,6 @@ passed_tests	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def passed_t
 passed_tests	.\watcher_dot_net.rb	/^  def passed_tests$/;"	f	class:MSTestRunner
 path	.\packages\specwatchr.1.6.6\src\sidekickapp.cs	/^        static string path = null; $/;"	f	class:SyncDeploy.Program	file:
 path	.\sidekickapp.cs	/^        static string path = null; $/;"	f	class:SyncDeploy.Program	file:
-person	.\__NAME__Tests\describe_Person.cs	/^        Person person;$/;"	f	class:__NAME__Tests.describe_Person	file:
 rake_command	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def self.rake_command$/;"	F	class:RakeBuilder
 rake_command	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def self.rake_command= command$/;"	F	class:RakeBuilder
 rake_command	.\watcher_dot_net.rb	/^  def self.rake_command$/;"	F	class:RakeBuilder
