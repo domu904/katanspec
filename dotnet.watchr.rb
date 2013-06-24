@@ -164,6 +164,7 @@ make sure to set your builder to :RakeBuilder
 
 #everything after this is specwatchr specific, feel free to dig into this, the source code for specwatchr is located in watcher_dot_net.rb
 def handle filename
+  @dw.sh.execute "rake ctags"
 	@dw.consider filename
 end
 
