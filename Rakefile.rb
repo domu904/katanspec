@@ -7,14 +7,14 @@ rescue LoadError
   puts ""
 end
 
-task :add_class do
+task :add_class, [:name] do |t, args|
   raise "name parameter required, example: rake add_class[Person]" if args[:name].nil?
   verify_file_name args[:name]
   save model_template(args[:name]), "__NAME__/#{args[:name]}.cs"
   add_compile_node :root, args[:name], "__NAME__/__NAME__.csproj"
 end
 
-task :add_test do
+task :add_test, [:name] do |t, args|
   raise "name parameter required, example: rake add_test[decribe_Person]" if args[:name].nil?
   verify_file_name args[:name]
   save test_template(args[:name]), "__NAME__Tests/#{args[:name]}.cs"
