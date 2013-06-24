@@ -1,0 +1,183 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CommandShell	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^class CommandShell$/;"	c
+CommandShell	.\watcher_dot_net.rb	/^class CommandShell$/;"	c
+DebuggerShim	.\__NAME__Tests\DebuggerShim.cs	/^public class DebuggerShim$/;"	c
+DebuggerShim	.\packages\nspec.0.9.58\content\DebuggerShim.cs	/^public class DebuggerShim$/;"	c
+GrowlNotifier	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^class GrowlNotifier$/;"	c
+GrowlNotifier	.\watcher_dot_net.rb	/^class GrowlNotifier$/;"	c
+Hello	.\__NAME__\Person.cs	/^        void Hello()$/;"	m	class:__NAME__.Person	file:
+MSBuilder	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^class MSBuilder$/;"	c
+MSBuilder	.\watcher_dot_net.rb	/^class MSBuilder$/;"	c
+MSTestRunner	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^class MSTestRunner < TestRunner$/;"	c
+MSTestRunner	.\watcher_dot_net.rb	/^class MSTestRunner < TestRunner$/;"	c
+Main	.\packages\specwatchr.1.6.6\src\sidekickapp.cs	/^        static void Main(string[] args)$/;"	m	class:SyncDeploy.Program	file:
+Main	.\sidekickapp.cs	/^        static void Main(string[] args)$/;"	m	class:SyncDeploy.Program	file:
+NSpecRunner	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^class NSpecRunner < TestRunner$/;"	c
+NSpecRunner	.\watcher_dot_net.rb	/^class NSpecRunner < TestRunner$/;"	c
+NUnitRunner	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^class NUnitRunner < TestRunner$/;"	c
+NUnitRunner	.\watcher_dot_net.rb	/^class NUnitRunner < TestRunner$/;"	c
+Person	.\__NAME__\Person.cs	/^    public class Person$/;"	c	namespace:__NAME__
+Program	.\packages\specwatchr.1.6.6\src\sidekickapp.cs	/^    class Program$/;"	c	namespace:SyncDeploy
+Program	.\sidekickapp.cs	/^    class Program$/;"	c	namespace:SyncDeploy
+RakeBuilder	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^class RakeBuilder$/;"	c
+RakeBuilder	.\watcher_dot_net.rb	/^class RakeBuilder$/;"	c
+Shell	.\packages\specwatchr.1.6.6\src\sidekickapp.cs	/^        static void Shell(params string[] args)$/;"	m	class:SyncDeploy.Program	file:
+Shell	.\sidekickapp.cs	/^        static void Shell(params string[] args)$/;"	m	class:SyncDeploy.Program	file:
+SyncDeploy	.\packages\specwatchr.1.6.6\src\sidekickapp.cs	/^namespace SyncDeploy$/;"	n
+SyncDeploy	.\sidekickapp.cs	/^namespace SyncDeploy$/;"	n
+TestRunner	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^class TestRunner$/;"	c
+TestRunner	.\watcher_dot_net.rb	/^class TestRunner$/;"	c
+WatcherDotNet	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^class WatcherDotNet$/;"	c
+WatcherDotNet	.\watcher_dot_net.rb	/^class WatcherDotNet$/;"	c
+__NAME__	.\__NAME__\Person.cs	/^namespace __NAME__$/;"	n
+__NAME__Tests	.\__NAME__Tests\describe_Person.cs	/^namespace __NAME__Tests$/;"	n
+add_compile_node	.\Rakefile.rb	/^def add_compile_node folder, name, project = nil$/;"	f
+add_include	.\Rakefile.rb	/^def add_include doc, type, value$/;"	f
+build_cmd	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def build_cmd file$/;"	f	class:MSBuilder
+build_cmd	.\watcher_dot_net.rb	/^  def build_cmd file$/;"	f	class:MSBuilder
+consider	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def consider file$/;"	f	class:WatcherDotNet
+consider	.\watcher_dot_net.rb	/^  def consider file$/;"	f	class:WatcherDotNet
+contained_in_test_project	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def contained_in_test_project file$/;"	f	class:NSpecRunner
+contained_in_test_project	.\watcher_dot_net.rb	/^  def contained_in_test_project file$/;"	f	class:NSpecRunner
+debug	.\__NAME__Tests\DebuggerShim.cs	/^    public void debug()$/;"	m	class:DebuggerShim
+debug	.\packages\nspec.0.9.58\content\DebuggerShim.cs	/^    public void debug()$/;"	m	class:DebuggerShim
+describe_Person	.\__NAME__Tests\describe_Person.cs	/^    class describe_Person : nspec$/;"	c	namespace:__NAME__Tests
+execute	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def execute cmd$/;"	f	class:CommandShell
+execute	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def execute test_name$/;"	f	class:NSpecRunner
+execute	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def execute test_name$/;"	f	class:NUnitRunner
+execute	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def execute test_name$/;"	f
+execute	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def execute title, text, color$/;"	f	class:GrowlNotifier
+execute	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def execute$/;"	f	class:MSBuilder
+execute	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def execute$/;"	f	class:RakeBuilder
+execute	.\watcher_dot_net.rb	/^  def execute cmd$/;"	f	class:CommandShell
+execute	.\watcher_dot_net.rb	/^  def execute test_name$/;"	f	class:NSpecRunner
+execute	.\watcher_dot_net.rb	/^  def execute test_name$/;"	f	class:NUnitRunner
+execute	.\watcher_dot_net.rb	/^  def execute test_name$/;"	f
+execute	.\watcher_dot_net.rb	/^  def execute title, text, color$/;"	f	class:GrowlNotifier
+execute	.\watcher_dot_net.rb	/^  def execute$/;"	f	class:MSBuilder
+execute	.\watcher_dot_net.rb	/^  def execute$/;"	f	class:RakeBuilder
+failed	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def failed$/;"	f	class:NUnitRunner
+failed	.\watcher_dot_net.rb	/^  def failed$/;"	f	class:NUnitRunner
+failed_tests	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def failed_tests$/;"	f	class:MSTestRunner
+failed_tests	.\watcher_dot_net.rb	/^  def failed_tests$/;"	f	class:MSTestRunner
+file_changed	.\dotnet.watchr.rb	/^def file_changed full_path$/;"	f
+file_changed	.\packages\specwatchr.1.6.6\src\dotnet.watchr.rb	/^def file_changed full_path$/;"	f
+find	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def find file$/;"	f	class:NSpecRunner
+find	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def find file$/;"	f	class:TestRunner
+find	.\watcher_dot_net.rb	/^  def find file$/;"	f	class:NSpecRunner
+find	.\watcher_dot_net.rb	/^  def find file$/;"	f	class:TestRunner
+get_test_dll_for	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def get_test_dll_for(file_name)$/;"	f	class:TestRunner
+get_test_dll_for	.\watcher_dot_net.rb	/^  def get_test_dll_for(file_name)$/;"	f	class:TestRunner
+growl_path	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def self.growl_path$/;"	F	class:GrowlNotifier
+growl_path	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def self.growl_path= value$/;"	F	class:GrowlNotifier
+growl_path	.\watcher_dot_net.rb	/^  def self.growl_path$/;"	F	class:GrowlNotifier
+growl_path	.\watcher_dot_net.rb	/^  def self.growl_path= value$/;"	F	class:GrowlNotifier
+handle	.\dotnet.watchr.rb	/^def handle filename$/;"	f
+handle	.\packages\specwatchr.1.6.6\src\dotnet.watchr.rb	/^def handle filename$/;"	f
+handle_webfile	.\dotnet.watchr.rb	/^def handle_webfile filename$/;"	f
+handle_webfile	.\packages\specwatchr.1.6.6\src\dotnet.watchr.rb	/^def handle_webfile filename$/;"	f
+inconclusive	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def inconclusive$/;"	f	class:NSpecRunner
+inconclusive	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def inconclusive$/;"	f	class:NUnitRunner
+inconclusive	.\watcher_dot_net.rb	/^  def inconclusive$/;"	f	class:NSpecRunner
+inconclusive	.\watcher_dot_net.rb	/^  def inconclusive$/;"	f	class:NUnitRunner
+initialize	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def initialize folder$/;"	f	class:MSBuilder
+initialize	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def initialize folder$/;"	f	class:MSTestRunner
+initialize	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def initialize folder$/;"	f	class:NSpecRunner
+initialize	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def initialize folder$/;"	f	class:NUnitRunner
+initialize	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def initialize folder$/;"	f	class:RakeBuilder
+initialize	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def initialize folder$/;"	f	class:TestRunner
+initialize	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def initialize folder, config $/;"	f	class:WatcherDotNet
+initialize	.\watcher_dot_net.rb	/^  def initialize folder$/;"	f	class:MSBuilder
+initialize	.\watcher_dot_net.rb	/^  def initialize folder$/;"	f	class:MSTestRunner
+initialize	.\watcher_dot_net.rb	/^  def initialize folder$/;"	f	class:NSpecRunner
+initialize	.\watcher_dot_net.rb	/^  def initialize folder$/;"	f	class:NUnitRunner
+initialize	.\watcher_dot_net.rb	/^  def initialize folder$/;"	f	class:RakeBuilder
+initialize	.\watcher_dot_net.rb	/^  def initialize folder$/;"	f	class:TestRunner
+initialize	.\watcher_dot_net.rb	/^  def initialize folder, config $/;"	f	class:WatcherDotNet
+it_works	.\__NAME__Tests\describe_Person.cs	/^        void it_works()$/;"	m	class:__NAME__Tests.describe_Person	file:
+model_template	.\Rakefile.rb	/^def model_template name$/;"	f
+ms_build_path	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def self.ms_build_path$/;"	F	class:MSBuilder
+ms_build_path	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def self.ms_build_path= value$/;"	F	class:MSBuilder
+ms_build_path	.\watcher_dot_net.rb	/^  def self.ms_build_path$/;"	F	class:MSBuilder
+ms_build_path	.\watcher_dot_net.rb	/^  def self.ms_build_path= value$/;"	F	class:MSBuilder
+ms_test_path	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def self.ms_test_path$/;"	F	class:MSTestRunner
+ms_test_path	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def self.ms_test_path= value$/;"	F	class:MSTestRunner
+ms_test_path	.\watcher_dot_net.rb	/^  def self.ms_test_path$/;"	F	class:MSTestRunner
+ms_test_path	.\watcher_dot_net.rb	/^  def self.ms_test_path= value$/;"	F	class:MSTestRunner
+nspec_path	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def self.nspec_path$/;"	F	class:NSpecRunner
+nspec_path	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def self.nspec_path= value$/;"	F	class:NSpecRunner
+nspec_path	.\watcher_dot_net.rb	/^  def self.nspec_path$/;"	F	class:NSpecRunner
+nspec_path	.\watcher_dot_net.rb	/^  def self.nspec_path= value$/;"	F	class:NSpecRunner
+nunit_path	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def self.nunit_path$/;"	F	class:NUnitRunner
+nunit_path	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def self.nunit_path= value$/;"	F	class:NUnitRunner
+nunit_path	.\watcher_dot_net.rb	/^  def self.nunit_path$/;"	F	class:NUnitRunner
+nunit_path	.\watcher_dot_net.rb	/^  def self.nunit_path= value$/;"	F	class:NUnitRunner
+parse_test_result	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def parse_test_result test_dll, test_output, test_name$/;"	f	class:MSTestRunner
+parse_test_result	.\watcher_dot_net.rb	/^  def parse_test_result test_dll, test_output, test_name$/;"	f	class:MSTestRunner
+passed_tests	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def passed_tests$/;"	f	class:MSTestRunner
+passed_tests	.\watcher_dot_net.rb	/^  def passed_tests$/;"	f	class:MSTestRunner
+path	.\packages\specwatchr.1.6.6\src\sidekickapp.cs	/^        static string path = null; $/;"	f	class:SyncDeploy.Program	file:
+path	.\sidekickapp.cs	/^        static string path = null; $/;"	f	class:SyncDeploy.Program	file:
+person	.\__NAME__Tests\describe_Person.cs	/^        Person person;$/;"	f	class:__NAME__Tests.describe_Person	file:
+rake_command	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def self.rake_command$/;"	F	class:RakeBuilder
+rake_command	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def self.rake_command= command$/;"	F	class:RakeBuilder
+rake_command	.\watcher_dot_net.rb	/^  def self.rake_command$/;"	F	class:RakeBuilder
+rake_command	.\watcher_dot_net.rb	/^  def self.rake_command= command$/;"	F	class:RakeBuilder
+require_build	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def require_build file$/;"	f	class:WatcherDotNet
+require_build	.\watcher_dot_net.rb	/^  def require_build file$/;"	f	class:WatcherDotNet
+root_folder	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def root_folder file$/;"	f	class:NSpecRunner
+root_folder	.\watcher_dot_net.rb	/^  def root_folder file$/;"	f	class:NSpecRunner
+save	.\Rakefile.rb	/^def save content, file_path$/;"	f
+set_test_result_output	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def set_test_result_output test_dll, test_name$/;"	f
+set_test_result_output	.\watcher_dot_net.rb	/^  def set_test_result_output test_dll, test_name$/;"	f
+set_test_status	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def set_test_status test_dll, test_output$/;"	f	class:MSTestRunner
+set_test_status	.\watcher_dot_net.rb	/^  def set_test_status test_dll, test_output$/;"	f	class:MSTestRunner
+sln_file	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def sln_file$/;"	f	class:MSBuilder
+sln_file	.\watcher_dot_net.rb	/^  def sln_file$/;"	f	class:MSBuilder
+status_by_dll	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def status_by_dll$/;"	f	class:MSTestRunner
+status_by_dll	.\watcher_dot_net.rb	/^  def status_by_dll$/;"	f	class:MSTestRunner
+test_cmd	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def test_cmd dll, name$/;"	f	class:NSpecRunner
+test_cmd	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def test_cmd test_dll, test_name$/;"	f	class:NUnitRunner
+test_cmd	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def test_cmd test_dll, test_name$/;"	f
+test_cmd	.\watcher_dot_net.rb	/^  def test_cmd dll, name$/;"	f	class:NSpecRunner
+test_cmd	.\watcher_dot_net.rb	/^  def test_cmd test_dll, test_name$/;"	f	class:NUnitRunner
+test_cmd	.\watcher_dot_net.rb	/^  def test_cmd test_dll, test_name$/;"	f
+test_config	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def test_config$/;"	f	class:MSTestRunner
+test_config	.\watcher_dot_net.rb	/^  def test_config$/;"	f	class:MSTestRunner
+test_dlls	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def test_dlls$/;"	f	class:NSpecRunner
+test_dlls	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def test_dlls$/;"	f	class:TestRunner
+test_dlls	.\watcher_dot_net.rb	/^  def test_dlls$/;"	f	class:NSpecRunner
+test_dlls	.\watcher_dot_net.rb	/^  def test_dlls$/;"	f	class:TestRunner
+test_dlls=	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def test_dlls= override$/;"	f	class:NSpecRunner
+test_dlls=	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def test_dlls= override$/;"	f	class:TestRunner
+test_dlls=	.\watcher_dot_net.rb	/^  def test_dlls= override$/;"	f	class:NSpecRunner
+test_dlls=	.\watcher_dot_net.rb	/^  def test_dlls= override$/;"	f	class:TestRunner
+test_results	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def test_results$/;"	f	class:NSpecRunner
+test_results	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def test_results$/;"	f	class:NUnitRunner
+test_results	.\watcher_dot_net.rb	/^  def test_results$/;"	f	class:NSpecRunner
+test_results	.\watcher_dot_net.rb	/^  def test_results$/;"	f	class:NUnitRunner
+test_template	.\Rakefile.rb	/^def test_template name$/;"	f
+tests	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def tests$/;"	f	class:NUnitRunner
+tests	.\watcher_dot_net.rb	/^  def tests$/;"	f	class:NUnitRunner
+tutorial	.\dotnet.watchr.rb	/^def tutorial$/;"	f
+tutorial	.\packages\specwatchr.1.6.6\src\dotnet.watchr.rb	/^def tutorial$/;"	f
+unsupported_solution_structure?	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def unsupported_solution_structure?$/;"	f	class:WatcherDotNet
+unsupported_solution_structure?	.\watcher_dot_net.rb	/^  def unsupported_solution_structure?$/;"	f	class:WatcherDotNet
+usage	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def usage$/;"	f	class:MSTestRunner
+usage	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def usage$/;"	f	class:NSpecRunner
+usage	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def usage$/;"	f	class:NUnitRunner
+usage	.\packages\specwatchr.1.6.6\src\watcher_dot_net.rb	/^  def usage$/;"	f	class:TestRunner
+usage	.\watcher_dot_net.rb	/^  def usage$/;"	f	class:MSTestRunner
+usage	.\watcher_dot_net.rb	/^  def usage$/;"	f	class:NSpecRunner
+usage	.\watcher_dot_net.rb	/^  def usage$/;"	f	class:NUnitRunner
+usage	.\watcher_dot_net.rb	/^  def usage$/;"	f	class:TestRunner
+verify_file_name	.\Rakefile.rb	/^def verify_file_name name$/;"	f
+watcher	.\packages\specwatchr.1.6.6\src\sidekickapp.cs	/^        static FileSystemWatcher watcher;$/;"	f	class:SyncDeploy.Program	file:
+watcher	.\sidekickapp.cs	/^        static FileSystemWatcher watcher;$/;"	f	class:SyncDeploy.Program	file:
+watcher_Changed	.\packages\specwatchr.1.6.6\src\sidekickapp.cs	/^        static void watcher_Changed(object sender, FileSystemEventArgs e)$/;"	m	class:SyncDeploy.Program	file:
+watcher_Changed	.\sidekickapp.cs	/^        static void watcher_Changed(object sender, FileSystemEventArgs e)$/;"	m	class:SyncDeploy.Program	file:

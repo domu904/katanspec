@@ -7,6 +7,11 @@ rescue LoadError
   puts ""
 end
 
+task :default do
+  msbuild_path = "#{ENV['SystemRoot']}\\Microsoft.NET\\Framework\\v4.0.30319\\msbuild.exe"
+  sh "\"#{msbuild_path}\" \"__NAME__.sln\" /verbosity:quiet /nologo"
+end
+
 task :add_class, [:name] do |t, args|
   raise "name parameter required, example: rake add_class[Person]" if args[:name].nil?
   verify_file_name args[:name]
@@ -68,7 +73,7 @@ def save content, file_path
   File.open(file_path, "w") { |f| f.write(content) }
 end
 
-def add_compile_node folder, name, project = nil
+def add_compile_node folder, name, project
   to_open = project || proj_file
   doc = Nokogiri::XML(open(to_open))
   if folder == :root
