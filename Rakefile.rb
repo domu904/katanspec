@@ -1,5 +1,6 @@
 begin
   require 'nokogiri'
+  require './StackTracePreview/stack_trace_preview.rb'
 rescue LoadError
   puts "============ note ============="
   puts "looks like you don't have nokogiri installed, you'll need to run the command 'gem install nokogiri'"
@@ -10,6 +11,10 @@ end
 task :default do
   msbuild_path = "#{ENV['SystemRoot']}\\Microsoft.NET\\Framework\\v4.0.30319\\msbuild.exe"
   sh "\"#{msbuild_path}\" \"__NAME__.sln\" /verbosity:quiet /nologo"
+end
+
+task :tests => :default do
+  sh "./packages/nspec.0.9.66/tools/NSpecRunner.exe __NAME__Tests/bin/debug/__NAME__Tests.dll"
 end
 
 task :add_class, [:name] do |t, args|
@@ -28,6 +33,22 @@ end
 
 task :ctags do
   sh "ctags --recurse"
+end
+
+task :stacktrace do
+  gen_preview "stacktrace.txt" 
+end
+
+def gen_preview from_file
+  puts "reading last error from #{from_file}"
+
+  stacktrace = File.readlines(from_file).join()
+
+  working_directory = pwd.gsub("/", "\\")
+
+  StackTracePreview.new(stacktrace, working_directory).generate "StackTracePreview/stacktrace.html"
+
+  puts "done, navigate to file:///#{pwd}/StackTracePreview/stacktrace.html#/toc in your browser for the results"
 end
 
 def verify_file_name name
