@@ -12,18 +12,41 @@ class GrowlNotifier
     @@growl_path = value
   end
 
+  def self.growl_path_32
+    @@growl_path_32
+  end
+  
+  def self.growl_path_32= value
+    @@growl_path_32 = value
+  end
+
+  def self.growl_path_64
+    @@growl_path_64
+  end
+  
+  def self.growl_path_64= value
+    @@growl_path_64 = value
+  end
+
   def execute title, text, color
-    return unless GrowlNotifier.growl_path
+    begin
+      text.gsub!('"', "'")
 
-    text.gsub!('"', "'")
+      text = text + "\n\n---"
 
-    text = text + "\n\n---"
+      opts = ["\"#{GrowlNotifier.growl_path }\"", "\"#{text}\"", "/t:\"#{title}\""]
 
-    opts = ["\"#{GrowlNotifier.growl_path}\"", "\"#{text}\"", "/t:\"#{title}\""]
+      opts << "/i:\"#{File.expand_path("#{color}.png")}\"" 
 
-    opts << "/i:\"#{File.expand_path("#{color}.png")}\"" 
+      puts title
+      puts text
 
-    `#{opts.join ' '}`
+      `#{opts.join ' '}`
+    rescue
+      puts "doesn't look like Growl for Windows is installed at:" 
+      puts GrowlNotifier.growl_path_32
+      puts GrowlNotifier.growl_path_64
+    end
   end
 end
 
@@ -109,6 +132,10 @@ class TestRunner
   
   def test_dlls= override
     @test_dlls_override = override 
+  end
+
+  def write_stack_trace output
+
   end
 
   def test_dlls
@@ -237,8 +264,12 @@ class NSpecRunner < TestRunner
     @test_statuses.clear
     @first_failed_test = nil
 
+    stack_trace_output = ""
+
     test_dlls.each do |dll| 
       output = @sh.execute(test_cmd(dll, test_name))
+
+      stack_trace_output += stack_trace_for(output) + "\n\n"
 
       test_result = Hash.new
       in_failure = false
@@ -264,6 +295,8 @@ class NSpecRunner < TestRunner
         end
       end
 
+      write_stack_trace(stack_trace_output)
+
       @test_statuses[dll] = test_result
 
       @test_results += output
@@ -282,6 +315,21 @@ class NSpecRunner < TestRunner
 
   def test_cmd dll, name
     return "\"#{NSpecRunner.nspec_path}\" \"#{dll}\" \"#{name}\""
+  end
+
+  def stack_trace_for test_output
+    stacktrace = ""
+
+    if test_output.match /FAILURES/
+      stacktrace = test_output.split('**** FAILURES ****').last.strip
+      stacktrace = stacktrace.split(/^.*Examples, /).first.strip
+    end
+
+    return stacktrace
+  end
+
+  def write_stack_trace output
+    File.open("stacktrace.txt", 'w') { |f| f.write(output) }
   end
   
   def inconclusive
@@ -368,6 +416,9 @@ OUTPUT
       
       console_output = @sh.execute(test_cmd(test_dll, test_name))
       puts console_output
+
+      write_stack_trace console_output
+
       test_result = Hash.new
       test_result[:inconclusive] = false
       test_result[:failed] = false

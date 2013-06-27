@@ -1,0 +1,4 @@
+nspec. describe User. it works.
+Expected string length 5 but was 2. Strings differ at index 1., Expected: "hello", But was: "hi", ------------^
+   at __NAME__Tests.describe_User.it_works() in c:\Development\katanspec\__NAME__Tests\describe_User.cs:line 21
+
