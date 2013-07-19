@@ -11,7 +11,7 @@ end
 desc "builds the solution"
 task :default do
   msbuild_path = "#{ENV['SystemRoot']}\\Microsoft.NET\\Framework\\v4.0.30319\\msbuild.exe"
-  sh "\"#{msbuild_path}\" \"__NAME__.sln\" /verbosity:quiet /nologo"
+  sh "\"#{msbuild_path}\" \"__NAME__.sln\" /verbosity:quiet /nologo /property:GenerateFullPaths=true"
 end
 
 desc "runs tests after building the solution"
