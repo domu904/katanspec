@@ -219,7 +219,7 @@ This will give you quick jump capabilities in vim. Press the `leader key` twice 
 
 - zencoding `git clone https://github.com/mattn/zencoding-vim.git`
 
-Fast html creation. More info and demo on website
+Fast html creation. More info and demo on website.
 
 - snipmate `git clone https://github.com/garbas/vim-snipmate.git`
 
@@ -236,3 +236,22 @@ snor <silent> <s-tab> <esc>i<right><c-r>=BackwardsSnippet()<cr>
 ino <silent> <c-r><tab> <c-r>=ShowAvailableSnips()<cr>
 
 [.... more stuff down here ...]
+
+
+##DONE! Now to start a kata
+
+Once you've set up your environment. Here is how you start a code kata in Vim.
+
+- start Growl for Windows
+- open ConEmu
+- navigate to a directory where you keep your katas
+- run the command `warmup http://github.com/amirrajan/katanspec YOURKATANAME`
+- type `vim`
+- create a git repo by entering `command` mode and typing `!git init`
+- and create your first commit by entering `command` mode and typing `!git add -A`
+- and then `!git commit -m "first commit"`
+- in the ConEmu window to the top right, navigate to the newly created directory and run `sidekick.bat`
+- add a class by via vim by entering `command` mode and typing `!rake add_class[Person]`
+- add code as you usually would, `sidekick (aka specwatchr)` will build the application, run ctags, and run tests for you
+- add a test class by via vim by entering `command` mode and typing `!rake add_test[describe_Person]`
+- write a failing test using [NSpec](http://nspec.org) and see `sidekick (aka specwatchr)` run the test for you

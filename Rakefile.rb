@@ -8,15 +8,18 @@ rescue LoadError
   puts ""
 end
 
+desc "builds the solution"
 task :default do
   msbuild_path = "#{ENV['SystemRoot']}\\Microsoft.NET\\Framework\\v4.0.30319\\msbuild.exe"
   sh "\"#{msbuild_path}\" \"__NAME__.sln\" /verbosity:quiet /nologo"
 end
 
+desc "runs tests after building the solution"
 task :tests => :default do
   sh "./packages/nspec.0.9.66/tools/NSpecRunner.exe __NAME__Tests/bin/debug/__NAME__Tests.dll"
 end
 
+desc "adds a class to the library project, example rake add_class[Person]"
 task :add_class, [:name] do |t, args|
   raise "name parameter required, example: rake add_class[Person]" if args[:name].nil?
   verify_file_name args[:name]
@@ -24,6 +27,7 @@ task :add_class, [:name] do |t, args|
   add_compile_node :root, args[:name], "__NAME__/__NAME__.csproj"
 end
 
+desc "adds a test to the test project, example rake add_test[describe_Person]"
 task :add_test, [:name] do |t, args|
   raise "name parameter required, example: rake add_test[decribe_Person]" if args[:name].nil?
   verify_file_name args[:name]
@@ -31,10 +35,12 @@ task :add_test, [:name] do |t, args|
   add_compile_node :root, args[:name], "__NAME__Tests/__NAME__Tests.csproj"
 end
 
+desc "runs ctags"
 task :ctags do
   sh "ctags --recurse"
 end
 
+desc "generates a stacktrace website for the tests that failed"
 task :stacktrace do
   gen_preview "stacktrace.txt" 
 end
