@@ -25,7 +25,7 @@ The good
 The bad
 
 - steep, steep learning curve (2-3 month commitment, but well worth it)
-- no built in debugger (it's a text editor not an IDE, heavy emphasis on testing and Console.WriteLine)
+- no built-in debugger (it's a text editor not an IDE, heavy emphasis on testing and Console.WriteLine)
 - heavy use of the command line
 - .Net's project and solution files make it a painful to change files (rake solves this)
 - you're starting from scratch, stitching together your vim environment (especially for .Net development)
