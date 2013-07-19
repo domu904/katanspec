@@ -30,7 +30,7 @@ The bad
 - .Net's project and solution files make it a painful to change files (rake solves this)
 - you're starting from scratch, stitching together your vim environment (especially for .Net development)
 - poor autocompletion for .Net BCL
-- refactoring can be a pain (on the plus side, you'll find that your api's are more consistent and you'll refactor more often)
+- no Resharper
 - you'll be "that guy/gal that uses vim for everything"
 - you may lose childhood memories as you become more proficient with vim trying remember all the shortcut's you've created
 - until this process is fully baked, you may have to "visit the mothership" to do more complex project and solution mainpulations
