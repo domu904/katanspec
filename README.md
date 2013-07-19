@@ -236,7 +236,7 @@ ino &lt;silent&gt; &lt;s-Space&gt; &lt;c-r&gt;TriggerSnippet()&lt;cr&gt;
 snor &lt;silent&gt; &lt;s-Space&gt; &lt;esc&gt;i&lt;right&gt;lt;c-r&gt;TriggerSnippet()&lt;cr&gt;
 ino &lt;silent&gt; &lt;s-tab&gt; &lt;c-r&gt;BackwardsSnippet()&lt;cr&gt;
 snor &lt;silent&gt; &lt;s-tab&gt; &lt;esc&gt;i&lt;right&gt;lt;c-r&gt;BackwardsSnippet()&lt;cr&gt;
-ino &lt;silent&gt; &lt;c-r&gt;lt;tab&gt; &lt;c-r&gt;ShowAvailableSnips()&lt;cr&gt;
+ino &lt;silent&gt; &lt;c-r&gt;&lt;tab&gt; &lt;c-r&gt;ShowAvailableSnips()&lt;cr&gt;
 
 [.... more stuff down here ...]
 </pre>
