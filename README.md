@@ -251,7 +251,7 @@ Once you've set up your environment. Here is how you start a code kata in Vim.
 - and create your first commit by entering `command` mode and typing `!git add -A`
 - and then `!git commit -m "first commit"`
 - in the ConEmu window to the top right, navigate to the newly created directory and run `sidekick.bat`
-- add a class by via vim by entering `command` mode and typing `!rake add_class[Person]`
+- add a class via vim by entering `command` mode and typing `!rake add_class[Person]`
 - add code as you usually would, `sidekick (aka specwatchr)` will build the application, run ctags, and run tests for you
 - add a test class by via vim by entering `command` mode and typing `!rake add_test[describe_Person]`
 - write a failing test using [NSpec](http://nspec.org) and see `sidekick (aka specwatchr)` run the test for you
