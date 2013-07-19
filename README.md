@@ -1,6 +1,6 @@
 ##NSpec code katas without Visual Studio
 
-This is a WarmuP template for doing code katas using NSpec. This readme also contains instructions for using VIM for these code katas.  It's purpose is to really put an emphasis on the kata and test driven development in a lean development environment.  After you get the hang of it, you may find that you're as productive in vim when compared to Visual Studio.
+This is a [WarmuP](https://github.com/chucknorris/warmup) template for doing code katas using NSpec. This readme also contains instructions for using VIM for these code katas.  It's purpose is to really put an emphasis on the kata and test driven development in a lean development environment.  After you get the hang of it, you may find that you're as productive in vim when compared to Visual Studio.
 
 ##Why would you want to do .Net dev outside of Visual Studio?
 
@@ -154,8 +154,10 @@ set ai
 set tabstop=2
 set shiftwidth=2
 set expandtab
+set makeprg=rake
+set errorformat=\ %#%f(%l\\\,%c):\ error\ CS%n:\ %m
 set fdm=indent
-colorscheme desert "color scheme compatible with ConEmu setup
+colorscheme desert
 au FileType cs set omnifunc=syntaxcomplete#Complete
 call pathogen#infect() "pathogen hook
 autocmd VimEnter * NERDTree "nerd tree is a plugin that you'll install, you want to load this by default
@@ -256,3 +258,4 @@ Once you've set up your environment. Here is how you start a code kata in Vim.
 - add code as you usually would, `sidekick (aka specwatchr)` will build the application, run ctags, and run tests for you
 - add a test class by via vim by entering `command` mode and typing `!rake add_test[describe_Person]`
 - write a failing test using [NSpec](http://nspec.org) and see `sidekick (aka specwatchr)` run the test for you
+- if you have a large amount of compiler errors, you can type `:make` in `command` mode, which will take you to the first compiler error, typing `:cw` will give you a list of all compiler errors that you can traverse through
