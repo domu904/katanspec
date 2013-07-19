@@ -76,19 +76,19 @@ This is needed to for a package called ack (and of course opens you up to using 
 
 ##Installing packages
 
-- from the command line run: gem install warmup
+- from the command line run: `gem install warmup`
 
 This will install a templating engine used to create .Net solutions
 
-- from the command line run: gem install nokogiri
+- from the command line run: `gem install nokogiri`
 
 This will install an xml manipulation library used to mainpulate project and solution files
 
-- from the command line run: ppm install ack
+- from the command line run: `ppm install ack`
 
 This will install ack, a powerful perl based text search tool
 
-- download [pathogen](https://github.com/tpope/vim-pathogen) as a zip, then extract the files and copy the autoload folder to C:\Program Files (x86)\vim\vim73
+- download [pathogen](https://github.com/tpope/vim-pathogen) as a zip, then extract the files and copy the autoload folder to `C:\Program Files (x86)\vim\vim73`
 
 Pathogen is a way to manage vim plugins without polluting the install directory
 
@@ -122,6 +122,117 @@ C:\Windows\SysWOW64\cmd.exe /c ""C:\Program Files (x86)\Git\bin\sh.exe" --login 
 
 - change this key binding from Ctrl + V to Shift + Ctrl + V
 
+You'll still use Ctrl + V to paste in vim, but use Shift + Ctrl + V to paste in the rest of ConEmu
+
 <a href="http://imgur.com/aZlRVzH"><img src="http://i.imgur.com/aZlRVzH.png" title="Hosted by imgur.com"/></a>
 
+##Installing vim plugins
 
+- set up your vimrc (Here is what mine looks like, you can customize yours more specifially later). To get the location for your vimrc file, refer to [this StackOverflow answer](http://stackoverflow.com/questions/8977649/how-to-locate-the-vimrc-file-used-by-vim-editor), the default location should be `C:\Program Files (x86)\vim\_vimrc`.
+
+<pre>
+set term=xterm "this will give > 16 bit colors
+set t_Co=256 "this will give > 16 bit colors
+let &t_AB="\e[48;5;%dm" 
+let &t_AF="\e[38;5;%dm"
+set nocompatible
+set background=dark "compatible with conemu color scheme
+source $VIMRUNTIME/vimrc_example.vim
+source $VIMRUNTIME/mswin.vim
+behave mswin
+let mapleader="," "I've remapped the leader key to ','
+set directory=c:/vim_swap_files "all swap files go here, you can change this directory to whatever you want
+set backupdir=c:/vim_swap_files "all swap files go here, you can change this directory to whatever you want
+set nobackup
+set nowritebackup
+set noswapfile
+set cursorline
+set gfn=Consolas:h12:cANSI "this is your font
+set nocompatible
+set guioptions-=T
+set ai
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set fdm=indent
+colorscheme desert "color scheme compatible with ConEmu setup
+au FileType cs set omnifunc=syntaxcomplete#Complete
+call pathogen#infect() "pathogen hook
+autocmd VimEnter * NERDTree "nerd tree is a plugin that you'll install, you want to load this by default
+syntax on
+filetype plugin indent on
+let g:JSLintHighlightErrorLine = 0 "js lint off by default
+
+set diffexpr=MyDiff()
+function MyDiff()
+  let opt = '-a --binary '
+  if &diffopt =~ 'icase' | let opt = opt . '-i ' | endif
+  if &diffopt =~ 'iwhite' | let opt = opt . '-b ' | endif
+  let arg1 = v:fname_in
+  if arg1 =~ ' ' | let arg1 = '"' . arg1 . '"' | endif
+  let arg2 = v:fname_new
+  if arg2 =~ ' ' | let arg2 = '"' . arg2 . '"' | endif
+  let arg3 = v:fname_out
+  if arg3 =~ ' ' | let arg3 = '"' . arg3 . '"' | endif
+  let eq = ''
+  if $VIMRUNTIME =~ ' '
+    if &sh =~ '\<cmd'
+      let cmd = '"' . $VIMRUNTIME . '\diff"'
+      let eq = '""'
+    else
+      let cmd = substitute($VIMRUNTIME, ' ', '" ', '') . '\diff"'
+    endif
+  else
+    let cmd = $VIMRUNTIME . '\diff'
+  endif
+  silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3 . eq
+endfunction
+</pre>
+
+With pathogen, all vim plugins can be installed by cloning git repositories. The default location for plugin installations are `C:\Users\%USER%\vimfiles\bundle`. So navigate to that directory and you can run `git clone PATHTOGITREPO` to install plugins.
+
+- Nerd tree: `git clone https://github.com/scrooloose/nerdtree.git`
+
+This will give you a file explorer in vim. You'll see it to the left when vim loads.
+
+- CtrlP: `git clone https://github.com/kien/ctrlp.vim.git`
+
+This will give you quick file navigation. Press `ctrl+p` and you'll git a file listing that can be searched. Press `enter` to open file, `ctrl+v` to open file in a vertical split and `ctrl+x` to open the file in a horizontal split.
+
+- Ack: `git clone https://github.com/mileszs/ack.vim.git`
+
+This will give you text search in Vim. In command mode type `:Ack` to search for all instances of a word under the cursor or `:Ack SEARCHTERM` for all instances of words you specifiy.
+
+- Ctags is already integrated, you can use `ctrl+]` to go to definition. [Here are some more keyboard shortcuts](http://stackoverflow.com/questions/563616/vim-and-ctags-tips-and-tricks)
+
+- supertab: `git clone https://github.com/ervandew/supertab.git`
+
+This will give you auto completion by pressing `TAB`, you can still use `ctrl+n` to autocomplete (all integrate with ctags).
+
+- vim-csharp: `git clone https://github.com/OrangeT/vim-csharp.git`
+
+Sytnax highlighting for csharp and razor
+
+- vim-easymotion `git clone https://github.com/Lokaltog/vim-easymotion.git`
+
+This will give you quick jump capabilities in vim. Press the `leader key` twice and then a `motion key`, for example (given your leader key is mapped to ','): `,,j` will give you a jump index for all lines going down.
+
+- zencoding `git clone https://github.com/mattn/zencoding-vim.git`
+
+Fast html creation. More info and demo on website
+
+- snipmate `git clone https://github.com/garbas/vim-snipmate.git`
+
+This will give you code templates, because of super tab, change the key map to trigger a snippet to `shift+space` in the `\after\plugin\snipMate.vim` file, you'll see a line with `TriggerSnippet()` and need to set the key to `<s-Space>` instead of tab. Here is mine for reference.
+
+<pre>
+[... stuff here ...]
+
+"------------- CHANGE THESE LINES -----------
+ino <silent> <s-Space> <c-r>=TriggerSnippet()<cr>
+snor <silent> <s-Space> <esc>i<right><c-r>=TriggerSnippet()<cr>
+ino <silent> <s-tab> <c-r>=BackwardsSnippet()<cr>
+snor <silent> <s-tab> <esc>i<right><c-r>=BackwardsSnippet()<cr>
+ino <silent> <c-r><tab> <c-r>=ShowAvailableSnips()<cr>
+
+[.... more stuff down here ...]
