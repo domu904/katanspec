@@ -28,7 +28,7 @@ The bad
 - heavy use of the command line
 - .Net's project and solution files make it a painful to change files (rake solves this)
 - you're starting from scratch, stitching together your vim environment (especially for .Net development)
-- poor autocompletiong for .Net BCL (not your own classes however)
+- poor autocompletion for .Net BCL (not your own classes however)
 - refactoring can be a pain (on the plus side, you'll find that your api's are more consistent and you'll refactor more often)
 - you'll be "that guy/gal that uses vim for everything"
 - you may lose childhood memories as you become more proficient with vim trying remember all the shortcut's you've created
