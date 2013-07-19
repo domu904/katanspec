@@ -20,16 +20,17 @@ The good
 - you'll be "that bad ass mofo" that uses vim and code circles around everyone else (yes, getting proficient with vim key bindings will make you that good)
 - a good vim story will bring developers from other stacks to try .Net development
 - you're build, test, and general SDLC will revolve around the command line, positioning yourself for automation of "all things"
+- better autocompletion for non-C# words and your own C# code
 
 The bad
 
 - steep, steep learning curve (2-3 month commitment, but well worth it)
-- no built in debugger (it's a text editor not an IDE, heavy emphasis on testing and Console.WriteLine)
+- no built-in debugger (it's a text editor not an IDE, heavy emphasis on testing and Console.WriteLine)
 - heavy use of the command line
 - .Net's project and solution files make it a painful to change files (rake solves this)
 - you're starting from scratch, stitching together your vim environment (especially for .Net development)
-- poor autocompletiong for .Net BCL (not your own classes however)
-- refactoring can be a pain (on the plus side, you'll find that your api's are more consistent and you'll refactor more often)
+- poor autocompletion for .Net BCL
+- no Resharper
 - you'll be "that guy/gal that uses vim for everything"
 - you may lose childhood memories as you become more proficient with vim trying remember all the shortcut's you've created
 - until this process is fully baked, you may have to "visit the mothership" to do more complex project and solution mainpulations
