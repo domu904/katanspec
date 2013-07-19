@@ -236,6 +236,7 @@ snor <silent> <s-tab> <esc>i<right><c-r>=BackwardsSnippet()<cr>
 ino <silent> <c-r><tab> <c-r>=ShowAvailableSnips()<cr>
 
 [.... more stuff down here ...]
+</pre>
 
 
 ##DONE! Now to start a kata
