@@ -232,11 +232,11 @@ This will give you code templates, because of super tab, change the key map to t
 [... stuff here ...]
 
 "------------- CHANGE THESE LINES -----------
-ino <silent> <s-Space> <c-r>=TriggerSnippet()<cr>
-snor <silent> <s-Space> <esc>i<right><c-r>=TriggerSnippet()<cr>
-ino <silent> <s-tab> <c-r>=BackwardsSnippet()<cr>
-snor <silent> <s-tab> <esc>i<right><c-r>=BackwardsSnippet()<cr>
-ino <silent> <c-r><tab> <c-r>=ShowAvailableSnips()<cr>
+ino &lt;silent&gt; &lt;s-Space&gt; &lt;c-r&gt;TriggerSnippet()&lt;cr&gt;
+snor &lt;silent&gt; &lt;s-Space&gt; &lt;esc&gt;i&lt;right&gt;lt;c-r&gt;TriggerSnippet()&lt;cr&gt;
+ino &lt;silent&gt; &lt;s-tab&gt; &lt;c-r&gt;BackwardsSnippet()&lt;cr&gt;
+snor &lt;silent&gt; &lt;s-tab&gt; &lt;esc&gt;i&lt;right&gt;lt;c-r&gt;BackwardsSnippet()&lt;cr&gt;
+ino &lt;silent&gt; &lt;c-r&gt;lt;tab&gt; &lt;c-r&gt;ShowAvailableSnips()&lt;cr&gt;
 
 [.... more stuff down here ...]
 </pre>
