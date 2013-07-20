@@ -19,7 +19,7 @@ The good
 - can be used for development outside of .Net, across OS'es and languages
 - you'll be "that bad ass mofo" that uses vim and code circles around everyone else (yes, getting proficient with vim key bindings will make you that good)
 - a good vim story will bring developers from other stacks to try .Net development
-- you're build, test, and general SDLC will revolve around the command line, positioning yourself for automation of "all things"
+- your build, test, and general SDLC will revolve around the command line, positioning yourself for automation of "all things"
 - better autocompletion for non-C# words and your own C# code
 
 The bad
