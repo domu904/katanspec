@@ -39,13 +39,13 @@ The bad
 
 The setup is still pretty manual. As this evolves, ideally there will be a chocolatey package that will get your entire environment up and running. For now this read me will have to do...
 
-- install [msysgit](https://code.google.com/p/msysgit/downloads/list)
-
-This is what will add vim to your system.  Keep in mind that this is vim and not gVim.
-
 - install [chocolatey](http://chocolatey.org/)
 
 It's apt-get for Windows.
+
+- install [msysgit](https://code.google.com/p/msysgit/downloads/list)
+
+This is what will add vim to your system.  Keep in mind that this is vim and not gVim.
 
 - install gVim via chocolatey by running: `cinst vim`
 
