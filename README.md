@@ -47,7 +47,9 @@ This is what will add vim to your system.  Keep in mind that this is vim and not
 
 It's apt-get for Windows.
 
-- install gVim via chocolatey by running: cinst vim
+- install gVim via chocolatey by running: 
+
+    cinst vim
 
 This will set up files needed for Vim customization
 
