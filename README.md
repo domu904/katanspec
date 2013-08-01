@@ -43,7 +43,7 @@ The setup is still pretty manual. As this evolves, ideally there will be a choco
 
 It's apt-get for Windows.
 
-- install [msysgit](https://code.google.com/p/msysgit/downloads/list)
+- install [git for windows](http://git-scm.com/download/win)
 
 This is what will add vim to your system.  Keep in mind that this is vim and not gVim.
 
@@ -51,15 +51,15 @@ This is what will add vim to your system.  Keep in mind that this is vim and not
 
 This will set up files needed for Vim customization
 
-- install [ruby 1.9.3](http://rubyinstaller.org/downloads/)
+- install ruby via chocolatey by running: `cinst ruby`
 
 Be sure to add it to your PATH, ruby is used for rake (build automation), warmup (solution/project generation) and nokogiri (xml file/csproj manipulation)
 
-- install [ctags for Windows](http://sourceforge.net/projects/ctags/files/ctags/) extract to a directory and add that directory to your PATH
+- install ctags via chocolatey by running: `cinst ctags`
 
 Ctags is used for auto completion and "go to definition" in vim.
 
-- install [Growl for Windows](http://www.growlforwindows.com/gfw/)
+- install ctags via chocolatey by running: `cinst growl`
 
 This will give you notifications of when builds and tests fail. Open up Growl once so that the C:\Users\%USER%\AppData\Local\Growl\2.0.0.0\Displays\ directory gets created, then...
 
@@ -67,13 +67,17 @@ This will give you notifications of when builds and tests fail. Open up Growl on
 
 This is a really nice theme for Growl for Windows. [Here are the settings I use](http://i.imgur.com/buWyf.png).
 
-- install [ConEmu](http://sourceforge.net/projects/conemu/)
+- install conemu via chocolatey by running: `cinst conemu`
 
 This is an incredibly awesome tabbed and split console window manager. We'll customize everything in the next section.
 
-- install [Strawberry Perl](http://strawberryperl.com/)
+- install perl via chocolatey by running: `cinst perl`
 
 This is needed to for a package called ack (and of course opens you up to using packages built in perl). Ack provides a very nice way to search for text in a directory.
+
+- install ack via chocolatey by running: `cinst ack`
+
+This will install ack, a powerful perl based text search tool
 
 ##Installing packages
 
@@ -84,10 +88,6 @@ This will install a templating engine used to create .Net solutions
 - from the command line run: `gem install nokogiri`
 
 This will install an xml manipulation library used to mainpulate project and solution files
-
-- from the command line run: `ppm install ack`
-
-This will install ack, a powerful perl based text search tool
 
 - download [pathogen](https://github.com/tpope/vim-pathogen) as a zip, then extract the files and copy the autoload folder to `C:\Program Files (x86)\vim\vim73`
 
