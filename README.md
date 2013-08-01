@@ -224,23 +224,10 @@ This will give you quick jump capabilities in vim. Press the `leader key` twice 
 
 Fast html creation. More info and demo on website.
 
-- snipmate `git clone https://github.com/garbas/vim-snipmate.git`
-
-This will give you code templates, because of super tab, change the key map to trigger a snippet to `shift+space` in the `\after\plugin\snipMate.vim` file, you'll see a line with `TriggerSnippet()` and need to set the key to `<s-Space>` instead of tab. Here is mine for reference.
-
-<pre>
-[... stuff here ...]
-
-"------------- CHANGE THESE LINES -----------
-ino &lt;silent&gt; &lt;s-Space&gt; &lt;c-r&gt;TriggerSnippet()&lt;cr&gt;
-snor &lt;silent&gt; &lt;s-Space&gt; &lt;esc&gt;i&lt;right&gt;lt;c-r&gt;TriggerSnippet()&lt;cr&gt;
-ino &lt;silent&gt; &lt;s-tab&gt; &lt;c-r&gt;BackwardsSnippet()&lt;cr&gt;
-snor &lt;silent&gt; &lt;s-tab&gt; &lt;esc&gt;i&lt;right&gt;lt;c-r&gt;BackwardsSnippet()&lt;cr&gt;
-ino &lt;silent&gt; &lt;c-r&gt;&lt;tab&gt; &lt;c-r&gt;ShowAvailableSnips()&lt;cr&gt;
-
-[.... more stuff down here ...]
-</pre>
-
+- snipmate and friends:
+  - `git clone https://github.com/tomtom/tlib_vim.git`
+  - `git clone https://github.com/MarcWeber/vim-addon-mw-utils.git`
+  - `git clone https://github.com/garbas/vim-snipmate.git`
 
 ##DONE! Now to start a kata
 
