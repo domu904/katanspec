@@ -71,7 +71,7 @@ This is a really nice theme for Growl for Windows. [Here are the settings I use]
 
 This is an incredibly awesome tabbed and split console window manager. We'll customize everything in the next section.
 
-- install perl via chocolatey by running: `cinst perl`
+- install perl via chocolatey by running: `cinst strawberryperl`
 
 This is needed to for a package called ack (and of course opens you up to using packages built in perl). Ack provides a very nice way to search for text in a directory.
 
