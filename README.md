@@ -159,7 +159,6 @@ set makeprg=rake
 set errorformat=\ %#%f(%l\\\,%c):\ error\ CS%n:\ %m
 set fdm=indent
 colorscheme desert
-au FileType cs set omnifunc=syntaxcomplete#Complete
 call pathogen#infect() "pathogen hook
 autocmd VimEnter * NERDTree "nerd tree is a plugin that you'll install, you want to load this by default
 syntax on
