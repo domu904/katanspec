@@ -19,7 +19,7 @@ The good
 - can be used for development outside of .Net, across OS'es and languages
 - you'll be "that bad ass mofo" that uses vim and code circles around everyone else (yes, getting proficient with vim key bindings will make you that good)
 - a good vim story will bring developers from other stacks to try .Net development
-- you're build, test, and general SDLC will revolve around the command line, positioning yourself for automation of "all things"
+- your build, test, and general SDLC will revolve around the command line, positioning yourself for automation of "all things"
 - better autocompletion for non-C# words and your own C# code
 
 The bad
@@ -39,27 +39,27 @@ The bad
 
 The setup is still pretty manual. As this evolves, ideally there will be a chocolatey package that will get your entire environment up and running. For now this read me will have to do...
 
-- install [msysgit](https://code.google.com/p/msysgit/downloads/list)
-
-This is what will add vim to your system.  Keep in mind that this is vim and not gVim.
-
 - install [chocolatey](http://chocolatey.org/)
 
 It's apt-get for Windows.
 
-- install gVim via chocolatey by running: cinst vim
+- install [git for windows](http://git-scm.com/download/win)
+
+This is what will add vim to your system.  Keep in mind that this is vim and not gVim.
+
+- install gVim via chocolatey by running: `cinst vim`
 
 This will set up files needed for Vim customization
 
-- install [ruby 1.9.3](http://rubyinstaller.org/downloads/)
+- install ruby via chocolatey by running: `cinst ruby`
 
 Be sure to add it to your PATH, ruby is used for rake (build automation), warmup (solution/project generation) and nokogiri (xml file/csproj manipulation)
 
-- install [ctags for Windows](http://sourceforge.net/projects/ctags/files/ctags/) extract to a directory and add that directory to your PATH
+- install ctags via chocolatey by running: `cinst ctags`
 
 Ctags is used for auto completion and "go to definition" in vim.
 
-- install [Growl for Windows](http://www.growlforwindows.com/gfw/)
+- install ctags via chocolatey by running: `cinst growl`
 
 This will give you notifications of when builds and tests fail. Open up Growl once so that the C:\Users\%USER%\AppData\Local\Growl\2.0.0.0\Displays\ directory gets created, then...
 
@@ -67,13 +67,17 @@ This will give you notifications of when builds and tests fail. Open up Growl on
 
 This is a really nice theme for Growl for Windows. [Here are the settings I use](http://i.imgur.com/buWyf.png).
 
-- install [ConEmu](http://sourceforge.net/projects/conemu/)
+- install conemu via chocolatey by running: `cinst conemu`
 
 This is an incredibly awesome tabbed and split console window manager. We'll customize everything in the next section.
 
-- install [Strawberry Perl](http://strawberryperl.com/)
+- install perl via chocolatey by running: `cinst strawberryperl`
 
 This is needed to for a package called ack (and of course opens you up to using packages built in perl). Ack provides a very nice way to search for text in a directory.
+
+- install ack via chocolatey by running: `cinst ack`
+
+This will install ack, a powerful perl based text search tool
 
 ##Installing packages
 
@@ -84,10 +88,6 @@ This will install a templating engine used to create .Net solutions
 - from the command line run: `gem install nokogiri`
 
 This will install an xml manipulation library used to mainpulate project and solution files
-
-- from the command line run: `ppm install ack`
-
-This will install ack, a powerful perl based text search tool
 
 - download [pathogen](https://github.com/tpope/vim-pathogen) as a zip, then extract the files and copy the autoload folder to `C:\Program Files (x86)\vim\vim73`
 
@@ -129,7 +129,7 @@ You'll still use Ctrl + V to paste in vim, but use Shift + Ctrl + V to paste in 
 
 ##Installing vim plugins
 
-- set up your vimrc (Here is what mine looks like, you can customize yours more specifially later). To get the location for your vimrc file, refer to [this StackOverflow answer](http://stackoverflow.com/questions/8977649/how-to-locate-the-vimrc-file-used-by-vim-editor), the default location should be `C:\Program Files (x86)\vim\_vimrc`.
+- set up your vimrc (Here is what mine looks like, you can customize yours more specifially later). To get the location for your vimrc file, refer to [this StackOverflow answer](http://stackoverflow.com/questions/8977649/how-to-locate-the-vimrc-file-used-by-vim-editor), the default location should be `C:\Users\USERNAME\_vimrc` (no extension) (you can create one here if it doesn't exist).
 
 <pre>
 set term=xterm "this will give > 16 bit colors
@@ -159,7 +159,6 @@ set makeprg=rake
 set errorformat=\ %#%f(%l\\\,%c):\ error\ CS%n:\ %m
 set fdm=indent
 colorscheme desert
-au FileType cs set omnifunc=syntaxcomplete#Complete
 call pathogen#infect() "pathogen hook
 autocmd VimEnter * NERDTree "nerd tree is a plugin that you'll install, you want to load this by default
 syntax on
@@ -224,23 +223,10 @@ This will give you quick jump capabilities in vim. Press the `leader key` twice 
 
 Fast html creation. More info and demo on website.
 
-- snipmate `git clone https://github.com/garbas/vim-snipmate.git`
-
-This will give you code templates, because of super tab, change the key map to trigger a snippet to `shift+space` in the `\after\plugin\snipMate.vim` file, you'll see a line with `TriggerSnippet()` and need to set the key to `<s-Space>` instead of tab. Here is mine for reference.
-
-<pre>
-[... stuff here ...]
-
-"------------- CHANGE THESE LINES -----------
-ino &lt;silent&gt; &lt;s-Space&gt; &lt;c-r&gt;TriggerSnippet()&lt;cr&gt;
-snor &lt;silent&gt; &lt;s-Space&gt; &lt;esc&gt;i&lt;right&gt;lt;c-r&gt;TriggerSnippet()&lt;cr&gt;
-ino &lt;silent&gt; &lt;s-tab&gt; &lt;c-r&gt;BackwardsSnippet()&lt;cr&gt;
-snor &lt;silent&gt; &lt;s-tab&gt; &lt;esc&gt;i&lt;right&gt;lt;c-r&gt;BackwardsSnippet()&lt;cr&gt;
-ino &lt;silent&gt; &lt;c-r&gt;&lt;tab&gt; &lt;c-r&gt;ShowAvailableSnips()&lt;cr&gt;
-
-[.... more stuff down here ...]
-</pre>
-
+- snipmate and friends:
+  - `git clone https://github.com/tomtom/tlib_vim.git`
+  - `git clone https://github.com/MarcWeber/vim-addon-mw-utils.git`
+  - `git clone https://github.com/garbas/vim-snipmate.git`
 
 ##DONE! Now to start a kata
 
