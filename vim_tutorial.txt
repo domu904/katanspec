@@ -128,13 +128,13 @@ Press "zz" to center the screen horizontally, then press "j" to move to the next
 
 
 
-Insert the missing word, remember "i" to go into insert mode then <esc> to go
+Insert the missing word in the sentance below. Remember "i" to go into insert mode then <esc> to go
 back into command mode. (Hint "jumps")
 
 The quick brown fox  over the lazy dog.
 
-You can also use "a" to go into insert mode. Using moves the postion of the
-cursor right before going into insert mode. It's similiar to pressing "li".
+You can also use "a" to go into insert mode. Using "a" moves the postion of the
+cursor right before going into insert mode. It's like pressing "li".
 Try it out:
 
 The quick brown fox  over the lazy dog.
@@ -185,8 +185,6 @@ position. Add a comment "//TODO, refactor" above the if statement
        Console.Writeline("a is greater than 15");
     }
 
-
-
 Fix all the errors in the code below, take advantage of "a", "i", "o" and
 their upper case versions too (if needed)
 
@@ -198,16 +196,24 @@ redo. Remeber that if you mess up.
 Check list:
 - missing parenthesis for method definition: hint "A"
 - missing open curly brace for method definition: hint "o"
-- missing "." and semicolon for the call to console writeline: hint "i" or "a", "A"
+- missing "." AND semicolon for the call to console writeline: hint "i" or "a", "A"
 - bad/misaligned spacing on second call to console writeline: hint "I"
 
     public void SayHello(int age
-        ConsoleWriteline("Say Hello")
+       ConsoleWriteline("Say Hello")
       Console.WriteLine("Say Hi");
     }
 
 
+
+
+
 Changing gears....
+
+
+
+
+
 
 There are too many occurrances of the word "fox". Delete an occurance of a word
 by using "dw" (delete word) in command mode. First navigate to the word "fox", then
