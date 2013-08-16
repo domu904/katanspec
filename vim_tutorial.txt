@@ -2,7 +2,7 @@ Start by pressing <esc>, that will put you in "command" mode. Now press "j".
 See what happend? You're on this line now. "j" means down. Now press "2j".
 
 What you did just there is "move down 2". Press "j"
-Time to follow the ascii road. press "j", then press the key under the cursor
+Time to follow the ascii road. press "j", then press the key that's highlighted by the blinking cursor
 j <---- press "j" because j is curently under your cursor
 j
 j           lllllllllllllj
@@ -13,21 +13,37 @@ llllllllllllk            j
 |___ new "motion" key!   j
                          j
 jhhhhhhhhhhhhhhhhhhhhhhhhh  <---- "h" is move left, "k" (which you used earlier) is move up
-Now press "i". This will put you in "insert mode". Type "I am awesome.<space>". Then press <esc> and then "j"
+I am awesome. Now press "i". This will put you in "insert mode". Type "I am awesome.<space>". Then press <esc> and then "j"
              j<----- you cursor should be here after you pressed "j", follow the ascii road press "j"
              j 
-jxxxxxxxxxxxxx
+j
 j            ^
 j            |_ new key! "x" deletes a character!
 j
 llllj
 jhhhh
-xxxxxxxxxxj
-The cool think about "x" is that whatever letter is deleted is put in the clip board. Move to the next line (press "j" in command mode)
- x     press "p", after observing the result, then press 3j
+j
+The cool thing about "x" is that whatever letter is deleted is put in the clip board. Move to the next line (press "j" in command mode)
+        press "p", after observing the result, then press 3j
  ^
  |_________ see! the "x" got pasted
-Fix the spelling error on the next line. By using a combination of "x" and "p". Move to the next line (press "j" in command mode)
-The quick brown fox jumsp over the lazy dog.
-                       ^
-                       |______ move the cursor here using "l", then press "xp".. this will switch the two characters
+Fix the spelling error on the next line. By using a combination of "x" and "p". Move down 4 lines by pressing "4j" 
+                                                                                        ______ press "xp".. this will switch the two characters
+                                                                                        |
+                                                                                       \|/
+(Press "l" to move all the way to the character under the arrow) The quick brown fox jumsp over the lazy dog.... press "j" to move to the next line
+                                                                                         j <--- another ascii road!!!
+                                                                                         j
+j                                                              back   back               b is for move back a word
+j
+j
+j
+There is a faster way to fix that spelling error above, Move down 4 lines by pressing "4j"
+                                                                                     _____ use "l" to move to the next arrow
+                                                                                     |
+                                                                                    \|/
+(Press "w" to move all the way to the character under the arrow) The quick brown fox jumsp over the lazy dog.... press "4j" to move to the next line
+                                                                                        ^
+                                                                                        | 
+                                                                                        |_____ press "xp".. this will switch the two characters
+
