@@ -97,7 +97,8 @@ press "fs" then keep pressing ";":  she sell sea shelsl by the sea shore, 9j to 
 Press "zz" to center the screen horizontally, then press "j" to move to the next line
 Breathe... no more ascii roads, make your way to the next line.
 
-
+By the way. "u" in command mode is undo, ctrl+R in command mode is
+redo. Remeber that if you mess up.
 
 Yay!!! Now fix "=>" to be ">=" in the if statement below: (Hint: "xp"). When you're
 done move to the next section.
@@ -110,6 +111,9 @@ done move to the next section.
             Console.WriteLine("Hi!");
     }
 
+By the way. "u" in command mode is undo, ctrl+R in command mode is
+redo. Remeber that if you mess up.
+
 Fix the misspelled variable names. (Hint: jurisdiction is misspelled)
 
     //remember "w", "b" and "f[char]"
@@ -121,3 +125,117 @@ Fix the misspelled variable names. (Hint: jurisdiction is misspelled)
     }
 
 Press "zz" to center the screen horizontally, then press "j" to move to the next line
+
+
+
+Insert the missing word, remember "i" to go into insert mode then <esc> to go
+back into command mode. (Hint "jumps")
+
+The quick brown fox  over the lazy dog.
+
+You can also use "a" to go into insert mode. Using moves the postion of the
+cursor right before going into insert mode. It's similiar to pressing "li".
+Try it out:
+
+The quick brown fox  over the lazy dog.
+
+
+Insert the missing characters in the code below (using "i" and/or "a", use <esc> to go back into command mode)
+
+By the way. "u" in command mode is undo, ctrl+R in command mode is
+redo. Remeber that if you mess up.
+
+    public void SayHello(int age   <--- this line is missing a parenthesis
+    {
+        if(age  18)  <-- this line is missing the comparison operator
+            Console.WriteLine("Hello!");
+        else
+            Console.WriteLine("Hi!")   <----- this line is missing a semicolon
+    }
+
+
+Each one of the lines below is missing a semi colon, insert them using "a",
+then go back into command mode using <esc>:
+
+    Console.WriteLine("a")
+    Console.WriteLine("b")
+    Console.WriteLine("c")
+    Console.WriteLine("d")
+
+You can quickly go into insert mode at the end of a line be pressing "A" in command mode
+You can quickly go into insert mode at the beginning of a line by pressing "I" in command mode
+Use "A" to go to the end of the following line and add a semicolon
+
+    foreach(var person in kids) person.SayHello(15)
+
+    foreach(var person in adults) person.SayHello(18)
+
+"o" is another way to quickly get into insert mode. "o" will put you into
+insert mode AND add a line. Add the missing curly brace by placing the cursor
+
+    if(a > 15) <-- place the cursor on this line a and press "o", then add the "{"
+       Console.Writeline("a is greater than 15");
+    }
+
+"O" (capital o) will put you into insert mode AND add a line ABOVE the cursor
+position. Add a comment "//TODO, refactor" above the if statement
+
+    if(a > 15) <-- place the cursor on this line a and press "O", then type your comment
+    {
+       Console.Writeline("a is greater than 15");
+    }
+
+
+
+Fix all the errors in the code below, take advantage of "a", "i", "o" and
+their upper case versions too (if needed)
+
+By the way. "u" in command mode is undo, ctrl+R in command mode is
+redo. Remeber that if you mess up.
+
+"zz" to center the screen
+
+Check list:
+- missing parenthesis for method definition: hint "A"
+- missing open curly brace for method definition: hint "o"
+- missing "." and semicolon for the call to console writeline: hint "i" or "a", "A"
+- bad/misaligned spacing on second call to console writeline: hint "I"
+
+    public void SayHello(int age
+        ConsoleWriteline("Say Hello")
+      Console.WriteLine("Say Hi");
+    }
+
+
+Changing gears....
+
+There are too many occurrances of the word "fox". Delete an occurance of a word
+by using "dw" (delete word) in command mode. First navigate to the word "fox", then
+press "dw":
+
+The quick brown fox fox jumps over the lazy dog.
+                ^
+                |
+                ------------ delete this with "dw"
+
+Try it one more time (this time with the word "dog"), remember: "d" is for delete, "w" is for word.
+
+The quick brown fox jumps over the lazy dog dog.
+                                        ^
+                                        |
+                                        ------------ delete this with "dw"
+
+Press "zz" to center the screen horizontally
+
+In the next sentence, the wrong word is used. Change a word by using "cw" (change word):
+
+- First navigate to the work "dog"
+- then press "cw" to change the word, notice that you are automatically put
+  into insert mode
+- Type "fox", then press <esc> to go back into command mode
+
+The quick brown dog jumps over the lazy dog.
+                ^
+                |
+                ------------ change this with "cw", type "fox", then press <esc>
+
