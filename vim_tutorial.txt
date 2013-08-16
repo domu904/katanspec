@@ -13,7 +13,10 @@ llllllllllllk            j
 |___ new "motion" key!   j
                          j
 jhhhhhhhhhhhhhhhhhhhhhhhhh  <---- "h" is move left, "k" (which you used earlier) is move up
-I am awesome. Now press "i". This will put you in "insert mode". Type "I am awesome.<space>". Then press <esc> and then "j"
+j
+j
+j
+Now press "i". This will put you in "insert mode". Type "I am awesome.<space>". Then press <esc> and then "j"
              j<----- you cursor should be here after you pressed "j", follow the ascii road press "j"
              j 
 j
@@ -71,7 +74,10 @@ The quick brown fox jumsp over the lazy dog.... press "5j" (move down 5) to cont
                        |_____ press "xp".. this will switch the two characters
 
 Here                     <------ your cursor is here, press "b" (back), then "j" (for down)
-"fs" followed by ";" we'll find multiple occurences of the character following the FIND command, try it out on the next line, fix the spelling error
+"fs" followed by ";" we'll find multiple occurences of the character following the FIND command, try it out on the next line move to the next line using "j"
+jhh                                               b                                                                                                 b
+j                                                                                                                                                   ^
+j
 she sell sea shelsl by the sea shore, 7j to move to the next part
 ^                ^         ^
 |                |         |
