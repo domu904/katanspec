@@ -19,29 +19,35 @@ j
 Now press "i". This will put you in "insert mode". Type "I am awesome.<space>". Then press <esc> and then "j"
              j<----- you cursor should be here after you pressed "j", follow the ascii road press "j"
              j 
-j
+jxxxxxxxxxxxxx
 j            ^
 j            |_ new key! "x" deletes a character!
 j
 llllj
 jhhhh
+xxxxxxxxxxxj
 j
+j
+Press "zz" to center the screen horizontally, then press "j" to move to the next line
 The cool thing about "x" is that whatever letter is deleted is put in the clip board. Move to the next line (press "j" in command mode)
-        press "p", after observing the result, then press 3j
+        press "p", after observing the result, then press 4j
  ^
  |_________ see! the "x" got pasted
-Fix the spelling error on the next line. By using a combination of "x" and "p". Move down 4 lines by pressing "4j" 
+
+Fix the spelling error on the next line. By using a combination of "x" and "p". Move down 5 lines by pressing "5j" 
+
                                                                                         ______ press "xp".. this will switch the two characters
                                                                                         |
                                                                                        \|/
-(Press "l" to move all the way to the character under the arrow) The quick brown fox jumps over the lazy dog.... press "j" to move to the next line
+(Press "l" to move all the way to the character under the arrow) The quick brown fox jumsp over the lazy dog.... press "j" to move to the next line
                                                                                          j <--- another ascii road!!!
                                                                                          j
 j                                                              back   back               b is for move back a word
 j
 j
 j
-There is a faster way to fix that spelling error above, Move down 4 lines by pressing "5j"
+Press "zz" to center the screen horizontally, then press "j" to move to the next line
+There is a faster way to fix that spelling error above, Move down 5 lines by pressing "5j"
 
                                                                          _____ use "l" to move to the next arrow
                                                                          |
@@ -51,7 +57,7 @@ There is a faster way to fix that spelling error above, Move down 4 lines by pre
                                                                             | 
                                                                             |_____ press "xp".. this will switch the two characters
 
-The motion keys "w" and "b" are faster ways to move between words, use "b" to move to the begining of this line, then "j" to move to the next line
+The motion keys "w" and "b" are faster ways to move between words, use "b" to move to the beginning of this line, then "j" to move to the next line
 j <--- ascii road! Time for some "w" and "b" practice!
 j
 j
@@ -63,6 +69,7 @@ word word word word word j
 j    back back back back b <---- "b" is for back
 j
 j
+Press "zz" to center the screen horizontally, then press "j" to move to the next line
 There is EVEN a faster way to get to the spelling error. Using "f" for find (don't press "f" yet). First, press "5j"
 
 ------- typing "fs" will FIND the first occurrance of "s" 
@@ -76,13 +83,41 @@ The quick brown fox jumsp over the lazy dog.... press "5j" (move down 5) to cont
 Here                     <------ your cursor is here, press "b" (back), then "j" (for down)
 "fs" followed by ";" we'll find multiple occurences of the character following the FIND command, try it out on the next line move to the next line using "j"
 jhh                                               b                                                                                                 b
-j                                                                                                                                                   ^
+j                                                                                                                                                   
 j
-she sell sea shelsl by the sea shore, 7j to move to the next part
-^                ^         ^
-|                |         |
-|                |         -------- if you find yourself here, you overshot... press "Fs" to find in the opposite direction....
-|                ----------------------------------------------
-|                                                             |
------- press "fs" then keep pressing ";" until you are here --- then "xp" to fix the error
+press "fs" then keep pressing ";":  she sell sea shelsl by the sea shore, 9j to move to the next part
+                                    ^                ^         ^   ^
+                                    |                |         |   |
+                                    |                |         -------- if you find yourself here, you overshot... press "Fs" to find in the opposite direction....
+                                    |                |
+                                    |                ----------------------------------------------
+                                    |                                                             |
+                                    ------ press "fs" then keep pressing ";" until you are here --- then "xp" to fix the error
 
+Press "zz" to center the screen horizontally, then press "j" to move to the next line
+Breathe... no more ascii roads, make your way to the next line.
+
+
+
+Yay!!! Now fix "=>" to be ">=" in the if statement below: (Hint: "xp"). When you're
+done move to the next section.
+
+    public void SayHello(int age)
+    {
+        if(age => 18) //this is the line with the error
+            Console.WriteLine("Hello!");
+        else
+            Console.WriteLine("Hi!");
+    }
+
+Fix the misspelled variable names. (Hint: jurisdiction is misspelled)
+
+    //remember "w", "b" and "f[char]"
+    var jursidiction = "Federal"; 
+
+    if(jursidiction == GetCurrentJursidiction())
+    {
+        Console.WriteLine(jursidiction);
+    }
+
+Press "zz" to center the screen horizontally, then press "j" to move to the next line
