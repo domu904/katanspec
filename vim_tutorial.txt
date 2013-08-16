@@ -1,0 +1,33 @@
+Start by pressing <esc>, that will put you in "command" mode. Now press "j".
+See what happend? You're on this line now. "j" means down. Now press "2j".
+
+What you did just there is "move down 2". Press "j"
+Time to follow the ascii road. press "j", then press the key under the cursor
+j <---- press "j" because j is curently under your cursor
+j
+j           lllllllllllllj
+j           k            j
+j           k            j
+llllllllllllk            j
+^                        j
+|___ new "motion" key!   j
+                         j
+jhhhhhhhhhhhhhhhhhhhhhhhhh  <---- "h" is move left, "k" (which you used earlier) is move up
+Now press "i". This will put you in "insert mode". Type "I am awesome.<space>". Then press <esc> and then "j"
+             j<----- you cursor should be here after you pressed "j", follow the ascii road press "j"
+             j 
+jxxxxxxxxxxxxx
+j            ^
+j            |_ new key! "x" deletes a character!
+j
+llllj
+jhhhh
+xxxxxxxxxxj
+The cool think about "x" is that whatever letter is deleted is put in the clip board. Move to the next line (press "j" in command mode)
+ x     press "p", after observing the result, then press 3j
+ ^
+ |_________ see! the "x" got pasted
+Fix the spelling error on the next line. By using a combination of "x" and "p". Move to the next line (press "j" in command mode)
+The quick brown fox jumsp over the lazy dog.
+                       ^
+                       |______ move the cursor here using "l", then press "xp".. this will switch the two characters
