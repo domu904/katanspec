@@ -42,8 +42,29 @@ There is a faster way to fix that spelling error above, Move down 4 lines by pre
                                                                                      _____ use "l" to move to the next arrow
                                                                                      |
                                                                                     \|/
-(Press "w" to move all the way to the character under the arrow) The quick brown fox jumsp over the lazy dog.... press "4j" to move to the next line
+(Press "w" to move all the way to the character under the arrow) The quick brown fox jumsp over the lazy dog.... press "5j" to move to the next line
                                                                                         ^
                                                                                         | 
                                                                                         |_____ press "xp".. this will switch the two characters
 
+The motion keys "w" and "b" are faster ways to move between words, use "b" to move to the begining of this line, then "j" to move to the next line
+j <--- ascii road! Time for some "w" and "b" practice!
+j
+j
+word word word word word j
+^                        j
+|____ "w" for word       j
+                         j
+                         j
+j    back back back back b <---- "b" is for back
+j
+j
+There is EVEN a faster way to get to the spelling error. Using "f" for find. Lets try it out, press "5j"
+
+------- typing "fs" will FIND the first occurrance of "s" 
+|
+|/
+The quick brown fox jumsp over the lazy dog.... press "j" to move to the next line
+                       ^
+                       | 
+                       |_____ press "xp".. this will switch the two characters
