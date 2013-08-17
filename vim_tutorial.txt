@@ -1,7 +1,11 @@
 Start by pressing <esc>, that will put you in "command" mode. Now press "j".
-See what happend? You're on this line now. "j" means down. Now press "2j".
+See what happend? You're on this line now. "j" means down. Now press "5j".
 
-What you did just there is "move down 2". Press "j"
+             if you see DASHED lines press "zR", otherwise ignore
+             if you see DASHED lines press "zR", otherwise ignore
+
+What you did just there is "move down 5". Press "j"
+If you mess your cursor position during this tutorial press "gg" to take you back to the top, try that now, next time press "j"
 Time to follow the ascii road. press "j", then press the key that's highlighted by the blinking cursor
 j <---- press "j" because j is curently under your cursor
 j
@@ -34,11 +38,12 @@ The cool thing about "x" is that whatever letter is deleted is put in the clip b
  ^
  |_________ see! the "x" got pasted
 
-Fix the spelling error on the next line. By using a combination of "x" and "p". Move down 5 lines by pressing "5j" 
+Fix the spelling error on the next line. By using a combination of "x" and "p". Move down 6 lines by pressing "6j" 
 
-                                                                                        ______ press "xp".. this will switch the two characters
+                                                                                        ...... press "xp".. this will switch the two characters
                                                                                         |
                                                                                        \|/
+                                                                                        .
 (Press "l" to move all the way to the character under the arrow) The quick brown fox jumsp over the lazy dog.... press "j" to move to the next line
                                                                                          j <--- another ascii road!!!
                                                                                          j
@@ -47,11 +52,12 @@ j
 j
 j
 Press "zz" to center the screen horizontally, then press "j" to move to the next line
-There is a faster way to fix that spelling error above, Move down 5 lines by pressing "5j"
+There is a faster way to fix that spelling error above, Move down 6 lines by pressing "6j"
 
-                                                                         _____ use "l" to move to the next arrow
+                                                                         ..... use "l" to move to the next arrow
                                                                          |
                                                                         \|/
+                                                                         .
 (Press "w" to move to the FIRST arrow, THEN use "l") The quick brown fox jumsp over the lazy dog.... press "5j" to move to the next line
                                                                             ^
                                                                             | 
@@ -85,27 +91,26 @@ Here                     <------ your cursor is here, press "b" (back), then "j"
 jhh                                               b                                                                                                 b
 j                                                                                                                                                   
 j
-press "fs" then keep pressing ";":  she sell sea shelsl by the sea shore, 9j to move to the next part
-                                    ^                ^         ^   ^
-                                    |                |         |   |
-                                    |                |         -------- if you find yourself here, you overshot... press "Fs" to find in the opposite direction....
-                                    |                |
-                                    |                ----------------------------------------------
+press "fs" then keep pressing ";":  she sells sea shelsl by the sea shore, 9j to move to the next part
+                                    ^                 ^         ^   ^
+                                    |                 |         |   |
+                                    |                 |         -------- if you find yourself here, you overshot... press "Fs" to find in the opposite direction....
+                                    |                 |
+                                    |                 ---------------------------------------------
                                     |                                                             |
                                     ------ press "fs" then keep pressing ";" until you are here --- then "xp" to fix the error
 
 Press "zz" to center the screen horizontally, then press "j" to move to the next line
-Breathe... no more ascii roads, make your way to the next line.
+Taking off the training wheels... no more ascii roads, make your way to the next line.
 
-By the way. "u" in command mode is undo, ctrl+R in command mode is
-redo. Remeber that if you mess up.
+By the way. "u" in command mode is undo, ctrl+R in command mode is redo. Remeber that if you mess up.
 
-Yay!!! Now fix "=>" to be ">=" in the if statement below: (Hint: "xp"). When you're
-done move to the next section.
+Now fix "=>" to be ">=" in the if statement below: (Hint: use "xp").
+When you're done move to the next section.
 
     public void SayHello(int age)
     {
-        if(age => 18) //this is the line with the error
+        if(age => 18) //this is the line with the error, use "xp" to change "=>" to ">="
             Console.WriteLine("Hello!");
         else
             Console.WriteLine("Hi!");
@@ -114,9 +119,13 @@ done move to the next section.
 By the way. "u" in command mode is undo, ctrl+R in command mode is
 redo. Remeber that if you mess up.
 
+
+
+
+
 Fix the misspelled variable names. (Hint: jurisdiction is misspelled)
 
-    //remember "w", "b" and "f[char]"
+    //remember "w", "b" and "f[char]" to move quickly
     var jursidiction = "Federal"; 
 
     if(jursidiction == GetCurrentJursidiction())
@@ -129,21 +138,39 @@ Press "zz" to center the screen horizontally, then press "j" to move to the next
 
 
 Insert the missing word in the sentance below. Remember "i" to go into insert mode then <esc> to go
-back into command mode. (Hint "jumps")
+back into command mode. (Hint insert "jumps")
 
 The quick brown fox  over the lazy dog.
+                    ^
+                    |
+                    |
+                    -------- place your cursor here and press "i", type "jumps", press <esc>
+
+
+
+
+
 
 You can also use "a" to go into insert mode. Using "a" moves the postion of the
 cursor right before going into insert mode. It's like pressing "li".
 Try it out:
 
 The quick brown fox  over the lazy dog.
+                   ^
+                   |
+                   |
+                   -------- place your cursor here and press "a", type "jumps", press <esc>
+
+
+
+Press "zz" to center the screen horizontally, then press "j" to move to the next line
+
 
 
 Insert the missing characters in the code below (using "i" and/or "a", use <esc> to go back into command mode)
 
 By the way. "u" in command mode is undo, ctrl+R in command mode is
-redo. Remeber that if you mess up.
+redo. Remember that if you mess up.
 
     public void SayHello(int age   <--- this line is missing a parenthesis
     {
@@ -185,6 +212,24 @@ position. Add a comment "//TODO, refactor" above the if statement
        Console.Writeline("a is greater than 15");
     }
 
+"r" is yet another way to quickly go into insert mode and make a change. "r"
+means replace. Pressing "r" will put you in insert mode for a single
+character. Use that fix small errors in your code.
+
+Try this now. Change the code below. Change the ">" to a "<" using "r".
+
+    if(a > 15) <-- place the cursor on the ">", press "r", then press "<" to preform the replace
+    {
+       Console.Writeline("a is greater than 15");
+    }
+
+Try this one more time:
+
+    if(a > 15) <-- place the cursor on the ">", press "r", then press "<" to preform the replace
+    {
+       Console.Writeline("a is greater than 15");
+    }
+
 Fix all the errors in the code below, take advantage of "a", "i", "o" and
 their upper case versions too (if needed)
 
@@ -194,23 +239,25 @@ redo. Remeber that if you mess up.
 "zz" to center the screen
 
 Check list:
-- missing parenthesis for method definition: hint "A"
-- missing open curly brace for method definition: hint "o"
-- missing "." AND semicolon for the call to console writeline: hint "i" or "a", "A"
-- bad/misaligned spacing on second call to console writeline: hint "I"
+- misspelled parameter "agr", fix the parameter to read as "age": use "r"
+- missing parenthesis for method definition: use "A"
+- missing open curly brace for method definition: use "o"
+- missing "." AND semicolon for the call to console writeline: use "i" or "a", "A"
+- bad/misaligned spacing on second call to console writeline: use "I"
 
-    public void SayHello(int age
+    public void SayHello(int agr
        ConsoleWriteline("Say Hello")
       Console.WriteLine("Say Hi");
     }
 
 
+I want you go through the manipulations above again. Press "u" a few times to undo your changes and try them again.
+
+In fact, I'd STRONGLY encourage you to go through these exercies multiple times using "u" to undo.
 
 
 
 Changing gears....
-
-
 
 
 
@@ -224,6 +271,9 @@ The quick brown fox fox jumps over the lazy dog.
                 |
                 ------------ delete this with "dw"
 
+
+
+
 Try it one more time (this time with the word "dog"), remember: "d" is for delete, "w" is for word.
 
 The quick brown fox jumps over the lazy dog dog.
@@ -231,7 +281,48 @@ The quick brown fox jumps over the lazy dog dog.
                                         |
                                         ------------ delete this with "dw"
 
+
+
+
 Press "zz" to center the screen horizontally
+
+
+
+
+Remember, whatever "x" and "d" removes is placed in the keyboard. In the next
+sentance, the word "dog" is in the wrong place. Use "dw" to delete the word,
+move to the end of the sentence, then press "p" to paste from the clipboard.
+
+The quick brown fox dog jumps over the lazy .
+                    ^                  ^
+                    |                  |
+                    |                  ----------- paste here with "p" and press "x" to delete the trailing space
+                    |
+                    ------------ delete this with "dw", and move to the end of the sentance
+
+
+Combining "dw" with "p", you can swap parameters pretty easily.  Try that now.
+Swap the variable below in the if clause, follow the steps below:
+
+        ...... FIRST Step, Step 1. place your cursor here and press "dw"
+        |
+       \|/
+        .
+    if( age > maxAge )
+    {  ^ ^    ^
+       | |    |
+       | |    ------ 3. place your cursor here and press "dw"
+       | |
+       | ------ 2. move your cursor here and press "p"
+       | 
+       |
+       |
+       -------- Step 4. place your cursor here and press "p"
+
+    }
+
+
+
 
 In the next sentence, the wrong word is used. Change a word by using "cw" (change word):
 
