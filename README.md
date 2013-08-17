@@ -228,6 +228,9 @@ Fast html creation. More info and demo on website.
   - `git clone https://github.com/MarcWeber/vim-addon-mw-utils.git`
   - `git clone https://github.com/garbas/vim-snipmate.git`
 
+- Omnisharp. Intellesence for VIM.
+  - go here for install instructions https://github.com/nosami/Omnisharp
+
 ##DONE! Now to start a kata
 
 Once you've set up your environment. Here is how you start a code kata in Vim.
