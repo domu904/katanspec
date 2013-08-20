@@ -35,6 +35,9 @@ The bad
 - you may lose childhood memories as you become more proficient with vim trying remember all the shortcut's you've created
 - until this process is fully baked, you may have to "visit the mothership" to do more complex project and solution mainpulations
 
+##Vim Tutorial
+You can take [this file](https://github.com/amirrajan/katanspec/blob/master/vim_tutorial.txt) and copy and paste it into VIM, work through it for a nice kickstart!
+
 ##Getting your "dev" environment setup on Windows
 
 The setup is still pretty manual. As this evolves, ideally there will be a chocolatey package that will get your entire environment up and running. For now this read me will have to do...
