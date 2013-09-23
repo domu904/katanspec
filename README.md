@@ -168,12 +168,29 @@ This will give you quick jump capabilities in vim. Press the `leader key` twice 
 
 Fast html creation. More info and demo on website.
 
-- snipmate and friends:
+- Snipmate and friends:
   - `git clone https://github.com/tomtom/tlib_vim.git`
   - `git clone https://github.com/MarcWeber/vim-addon-mw-utils.git`
   - `git clone https://github.com/garbas/vim-snipmate.git`
 
-- Omnisharp. Intellesence for VIM.
+Snipmate will give you code templates. To use: 
+
+- clone the git repositories above into your pathogen directory
+- then go to the `vim-snipmate\` directory and add a `snippets` folder
+- add a `snippets` folder
+- under the `vim-snipmate\snippets` folder add a file called `cs.snippets` (the pattern is `filename`.snippets. other examples: `js.snippets` `html.snippets`)
+- open `cs.snippets` in a text editor and paste the following text into it:
+
+    snippet if
+	          if (${1}) 
+	          {
+		            ${0}
+	          }
+	          
+- now, when you open a `cs` file, typing `if<tab>` will expand to the block above.
+- for more snippets goto: https://github.com/honza/vim-snippets/tree/master/snippets
+
+- Omnisharp. Intellesence for VIM (the vimrc provided above in this set of instructions will work with Omnisharp, you juse need to install the plugin).
   - go here for install instructions https://github.com/nosami/Omnisharp
 
 ##DONE! Now to start a kata
