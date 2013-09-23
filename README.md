@@ -195,7 +195,7 @@ snippet if
 - now, when you open a `cs` file, typing `if<tab>` will expand to the block above.
 - for more snippets goto: https://github.com/honza/vim-snippets/tree/master/snippets
 
-- Omnisharp. Intellesence for VIM (the vimrc provided above in this set of instructions will work with Omnisharp, you juse need to install the plugin).
+- Omnisharp. Intellesence for VIM (the vimrc provided above in this set of instructions will work with Omnisharp, you just need to install the plugin).
   - go here for install instructions https://github.com/nosami/Omnisharp
 
 ##DONE! Now to start a kata
