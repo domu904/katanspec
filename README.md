@@ -12,7 +12,7 @@ The good
 
 - full customization of the text editor, a means to create plugins that can be applied to development outside of .Net
 - fast startup and runtime
-- faster access to plugins
+- faster access to plugins specific to languages other than C# (css, javascript, html, go, clojure, et al)
 - free
 - better window management and file navigation
 - stupid fast text manipulation
@@ -21,15 +21,17 @@ The good
 - a good vim story will bring developers from other stacks to try .Net development
 - your build, test, and general SDLC will revolve around the command line, positioning yourself for automation of "all things"
 - better autocompletion for non-C# words and your own C# code
+- yes, you still get autocompletion for the .Net framework (though arguably not as good)
 
 The bad
 
-- steep, steep learning curve (2-3 month commitment, but well worth it)
-- no built-in debugger (it's a text editor not an IDE, heavy emphasis on testing and Console.WriteLine)
+- steep learning curve (2-3 month commitment, but well worth it)
+- I've included a vim tutorial for you to practice. Copy the following text into vim and work through it: [vim tutorial](https://raw.github.com/amirrajan/katanspec/master/vim_tutorial.txt)
+- no built-in debugger (it's a text editor not an IDE, heavy emphasis on testing and Console.WriteLine). If you need to debug, you can install an Express Edition of Visual Studio and insert the following line of code anywhere in your app to initiate debugging: `System.Diagnostics.Debugger.Launch()`
 - heavy use of the command line
-- .Net's project and solution files make it a painful to change files (rake solves this)
+- .Net's project and solution files make it a painful to change files (rake and WarmuP help solve this)
 - you're starting from scratch, stitching together your vim environment (especially for .Net development)
-- poor autocompletion for .Net BCL
+- yes, you still get autocompletion for the .Net framework (though arguably not as good)
 - no Resharper
 - you'll be "that guy/gal that uses vim for everything"
 - you may lose childhood memories as you become more proficient with vim trying remember all the shortcut's you've created
