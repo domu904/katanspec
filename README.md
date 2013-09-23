@@ -137,7 +137,7 @@ You'll still use Ctrl + V to paste in vim, but use Shift + Ctrl + V to paste in 
 
 - set up your vimrc (Here is what mine looks like, you can customize yours more specifially later). To get the location for your vimrc file, refer to [this StackOverflow answer](http://stackoverflow.com/questions/8977649/how-to-locate-the-vimrc-file-used-by-vim-editor), the default location should be `C:\Users\USERNAME\_vimrc` (no extension) (you can create one here if it doesn't exist).
 
-**[copy the contents of this file into your vimrc](https://raw.github.com/amirrajan/katanspec/master/samplevimrc.txt)**
+**[Copy the contents of this file into your vimrc](https://raw.github.com/amirrajan/katanspec/master/samplevimrc.txt)**
 
 With pathogen, all vim plugins can be installed by cloning git repositories. The default location for plugin installations are `C:\Users\%USER%\vimfiles\bundle`. So navigate to that directory and you can run `git clone PATHTOGITREPO` to install plugins.
 
