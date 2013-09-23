@@ -57,7 +57,7 @@ This is what will add vim to your system.  Keep in mind that this is vim and not
 This will be used to bootstrap .net solutions and give you access to a powerful programming language called ruby
 
 - install ruby via chocolatey by running: `cinst ruby`
-- install ruby devkit via chocolatey by running (gives you the ability to natively compile gems): `cinst ruby.devkit`
+- install ruby devkit (gives you the ability to natively compile gems) via chocolatey by running: `cinst ruby.devkit`
 
 Be sure to add it to your PATH, ruby is used for rake (build automation), warmup (solution/project generation) and nokogiri (xml file/csproj manipulation)
 
