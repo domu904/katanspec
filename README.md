@@ -187,8 +187,8 @@ Snipmate will give you code templates. To use:
 <pre>
     snippet if
             if (${1}) 
-	    {
-	        ${0}
+            {
+                ${0}
             }
 </pre>
 
