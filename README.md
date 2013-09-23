@@ -184,12 +184,14 @@ Snipmate will give you code templates. To use:
 - under the `vim-snipmate\snippets` folder add a file called `cs.snippets` (the pattern is `filename`.snippets. other examples: `js.snippets` `html.snippets`)
 - open `cs.snippets` in a text editor and paste the following text into it:
 
+<pre>
     snippet if
-	          if (${1}) 
-	          {
-		            ${0}
-	          }
-	          
+            if (${1}) 
+	    {
+	        ${0}
+            }
+</pre>
+
 - now, when you open a `cs` file, typing `if<tab>` will expand to the block above.
 - for more snippets goto: https://github.com/honza/vim-snippets/tree/master/snippets
 
