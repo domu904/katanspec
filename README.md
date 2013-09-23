@@ -59,7 +59,7 @@ This will be used to bootstrap .net solutions and give you access to a powerful 
 - install ruby via chocolatey by running: `cinst ruby`
 - install ruby devkit (gives you the ability to natively compile gems) via chocolatey by running: `cinst ruby.devkit`
 
-Be sure to add it to your PATH, ruby is used for rake (build automation), warmup (solution/project generation) and nokogiri (xml file/csproj manipulation)
+Be sure to add ruby to your PATH (you may have to restart Windows for path updates to take affect), ruby is used for rake (build automation), warmup (solution/project generation) and nokogiri (xml file/csproj manipulation)
 
 - install ctags via chocolatey by running: `cinst ctags`
 
