@@ -185,11 +185,11 @@ Snipmate will give you code templates. To use:
 - open `cs.snippets` in a text editor and paste the following text into it:
 
 <pre>
-    snippet if
-            if (${1}) 
-            {
-                ${0}
-            }
+snippet if
+        if (${1}) 
+        {
+            ${0}
+        }
 </pre>
 
 - now, when you open a `cs` file, typing `if<tab>` will expand to the block above.
