@@ -20,6 +20,7 @@ jhhhhhhhhhhhhhhhhhhhhhhhhh  <---- "h" is move left, "k" (which you used earlier)
 j
 j
 j
+Press "zz" to center the screen horizontally, then press "j" to move to the next line
 Now press "i". This will put you in "insert mode". Type "I am awesome.<space>". Then press <esc> and then "j"
              j<----- you cursor should be here after you pressed "j", follow the ascii road press "j"
              j 
@@ -88,8 +89,9 @@ The quick brown fox jumsp over the lazy dog.... press "5j" (move down 5) to cont
 
 Here                     <------ your cursor is here, press "b" (back), then "j" (for down)
 "fs" followed by ";" we'll find multiple occurences of the character following the FIND command, try it out on the next line move to the next line using "j"
-jhh                                               b                                                                                                 b
-j                                                                                                                                                   
+Use "b" to move to the beginning of this line (if you're not already there), then "j" to move to the next line
+j
+j
 j
 press "fs" then keep pressing ";":  she sells sea shelsl by the sea shore, 9j to move to the next part
                                     ^                 ^         ^   ^
@@ -189,8 +191,8 @@ then go back into command mode using <esc>:
     Console.WriteLine("c")
     Console.WriteLine("d")
 
-You can quickly go into insert mode at the end of a line be pressing "A" in command mode
-You can quickly go into insert mode at the beginning of a line by pressing "I" in command mode
+You can quickly go into insert mode at the end of a line be pressing "A" (capital "a") in command mode
+You can quickly go into insert mode at the beginning of a line by pressing "I" (capital "i") in command mode
 Use "A" to go to the end of the following line and add a semicolon
 
     foreach(var person in kids) person.SayHello(15)
@@ -239,13 +241,13 @@ redo. Remeber that if you mess up.
 "zz" to center the screen
 
 Check list:
-- misspelled parameter "agr", fix the parameter to read as "age": use "r"
+- misspelled parameter "are", fix the parameter to read as "age": use "r"
 - missing parenthesis for method definition: use "A"
 - missing open curly brace for method definition: use "o"
 - missing "." AND semicolon for the call to console writeline: use "i" or "a", "A"
 - bad/misaligned spacing on second call to console writeline: use "I"
 
-    public void SayHello(int agr
+    public void SayHello(int are
        ConsoleWriteline("Say Hello")
       Console.WriteLine("Say Hi");
     }
@@ -289,7 +291,7 @@ Press "zz" to center the screen horizontally
 
 
 
-Remember, whatever "x" and "d" removes is placed in the keyboard. In the next
+Remember, whatever "x" and "d" removes is placed in the clipboard. In the next
 sentance, the word "dog" is in the wrong place. Use "dw" to delete the word,
 move to the end of the sentence, then press "p" to paste from the clipboard.
 
@@ -322,17 +324,17 @@ Swap the variable below in the if clause, follow the steps below:
     }
 
 
+You can delete a line (and place it in the clipboard) by pressing "dd"
 
+Use "dd" and "p" to swap the line below.
 
-In the next sentence, the wrong word is used. Change a word by using "cw" (change word):
+    person.LeaveHouse(); <--- press "dd" on this line and press "p" right after
+    person.GetDressed();
 
-- First navigate to the work "dog"
-- then press "cw" to change the word, notice that you are automatically put
-  into insert mode
-- Type "fox", then press <esc> to go back into command mode
+Put these lines in the right order using "dd", "j", "k", "p" AND "P" (capital "p" which means "paste above") 
 
-The quick brown dog jumps over the lazy dog.
-                ^
-                |
-                ------------ change this with "cw", type "fox", then press <esc>
+    person.LeaveHouse();
+    person.GetDressed();
+    person.WakeUp();
+    person.TakeAShower();
 
