@@ -35,6 +35,9 @@ The bad
 - you may lose childhood memories as you become more proficient with vim trying remember all the shortcut's you've created
 - until this process is fully baked, you may have to "visit the mothership" to do more complex project and solution mainpulations
 
+##Vim Tutorial
+You can take [this file](https://github.com/amirrajan/katanspec/blob/master/vim_tutorial.txt) and copy and paste it into VIM, work through it for a nice kickstart!
+
 ##Getting your "dev" environment setup on Windows
 
 The setup is still pretty manual. As this evolves, ideally there will be a chocolatey package that will get your entire environment up and running. For now this read me will have to do...
@@ -132,8 +135,8 @@ You'll still use Ctrl + V to paste in vim, but use Shift + Ctrl + V to paste in 
 - set up your vimrc (Here is what mine looks like, you can customize yours more specifially later). To get the location for your vimrc file, refer to [this StackOverflow answer](http://stackoverflow.com/questions/8977649/how-to-locate-the-vimrc-file-used-by-vim-editor), the default location should be `C:\Users\USERNAME\_vimrc` (no extension) (you can create one here if it doesn't exist).
 
 <pre>
-set term=xterm "this will give > 16 bit colors
-set t_Co=256 "this will give > 16 bit colors
+set term=xterm "this will give >gt; 16 bit colors
+set t_Co=256 "this will give >gt; 16 bit colors
 let &t_AB="\e[48;5;%dm" 
 let &t_AF="\e[38;5;%dm"
 set nocompatible
@@ -163,7 +166,65 @@ call pathogen#infect() "pathogen hook
 autocmd VimEnter * NERDTree "nerd tree is a plugin that you'll install, you want to load this by default
 syntax on
 filetype plugin indent on
-let g:JSLintHighlightErrorLine = 0 "js lint off by default
+
+"clojure evaluation via fireplace
+nnoremap <lt;leader>gt;e <lt;esc>gt;v%:Eval<lt;cr>gt;
+
+" OmniSharp won't work without this setting
+filetype plugin on
+
+"This is the default value, setting it isn't actually necessary
+let g:OmniSharp_host = "http://localhost:2000"
+
+"Set the type lookup function to use the preview window instead of the status line
+let g:OmniSharp_typeLookupInPreview = 1
+
+"Showmatch significantly slows down omnicomplete
+"when the first match contains parentheses.
+set noshowmatch
+
+"Super tab settings
+"let g:SuperTabDefaultCompletionType = 'context'
+"let g:SuperTabContextDefaultCompletionType = "<lt;c-x>gt;<lt;c-o>gt;"
+"let g:SuperTabDefaultCompletionTypeDiscovery = ["&omnifunc:<lt;c-x>gt;<lt;c-o>gt;","&completefunc:<lt;c-x>gt;<lt;c-n>gt;"]
+"let g:SuperTabClosePreviewOnPopupClose = 1
+
+"don't autoselect first item in omnicomplete, show if only one item (for preview)
+set completeopt=longest,menuone,preview
+
+"nnoremap <lt;F5>gt; :wa!<lt;cr>gt;:OmniSharpBuild<lt;cr>gt;
+" Builds can run asynchronously with vim-dispatch installed
+"nnoremap <lt;F5>gt; :wa!<lt;cr>gt;:OmniSharpBuildAsync<lt;cr>gt;
+
+nnoremap <lt;F12>gt; :OmniSharpGotoDefinition<lt;cr>gt;
+nnoremap gd :OmniSharpGotoDefinition<lt;cr>gt;
+nnoremap <lt;leader>gt;fi :OmniSharpFindImplementations<lt;cr>gt;
+nnoremap <lt;leader>gt;fu :OmniSharpFindUsages<lt;cr>gt;
+nnoremap <lt;leader>gt;fm :OmniSharpFindMembers<lt;cr>gt;
+nnoremap <lt;leader>gt;tt :OmniSharpTypeLookup<lt;cr>gt;
+"I find contextual code actions so useful that I have it mapped to the spacebar
+nnoremap <lt;space>gt; :OmniSharpGetCodeActions<lt;cr>gt;
+
+" rename with dialog
+"nnoremap nm :OmniSharpRename<lt;cr>gt;
+nnoremap <lt;F2>gt; :OmniSharpRename<lt;cr>gt;      
+" rename without dialog - with cursor on the symbol to rename... ':Rename newname'
+command! -nargs=1 Rename :call OmniSharp#RenameTo("<lt;args>gt;")
+" Force OmniSharp to reload the solution. Useful when switching branches etc.
+nnoremap <lt;leader>gt;rl :OmniSharpReloadSolution<lt;cr>gt;
+nnoremap <lt;leader>gt;cf :OmniSharpCodeFormat<lt;cr>gt;
+nnoremap <lt;leader>gt;tp :OmniSharpAddToProject<lt;cr>gt;
+" (Experimental - uses vim-dispatch or vimproc plugin) - Start the omnisharp server for the current solution
+nnoremap <lt;leader>gt;ss :OmniSharpStartServer<lt;cr>gt;
+nnoremap <lt;leader>gt;sp :OmniSharpStopServer<lt;cr>gt;
+nnoremap <lt;leader>gt;th :OmniSharpHighlightTypes<lt;cr>gt;
+"Don't ask to save when changing buffers (i.e. when jumping to a type definition)
+set hidden
+
+set noerrorbells visualbell t_vb=
+if has('autocmd')
+  autocmd GUIEnter * set visualbell t_vb=
+endif
 
 set diffexpr=MyDiff()
 function MyDiff()
@@ -178,17 +239,9 @@ function MyDiff()
   if arg3 =~ ' ' | let arg3 = '"' . arg3 . '"' | endif
   let eq = ''
   if $VIMRUNTIME =~ ' '
-    if &sh =~ '\&lt;cmd'
-      let cmd = '"' . $VIMRUNTIME . '\diff"'
-      let eq = '""'
-    else
-      let cmd = substitute($VIMRUNTIME, ' ', '" ', '') . '\diff"'
-    endif
-  else
-    let cmd = $VIMRUNTIME . '\diff'
-  endif
-  silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3 . eq
+    if &sh =~ '\ ' . arg3 . eq
 endfunction
+
 </pre>
 
 With pathogen, all vim plugins can be installed by cloning git repositories. The default location for plugin installations are `C:\Users\%USER%\vimfiles\bundle`. So navigate to that directory and you can run `git clone PATHTOGITREPO` to install plugins.
@@ -227,6 +280,9 @@ Fast html creation. More info and demo on website.
   - `git clone https://github.com/tomtom/tlib_vim.git`
   - `git clone https://github.com/MarcWeber/vim-addon-mw-utils.git`
   - `git clone https://github.com/garbas/vim-snipmate.git`
+
+- Omnisharp. Intellesence for VIM.
+  - go here for install instructions https://github.com/nosami/Omnisharp
 
 ##DONE! Now to start a kata
 
