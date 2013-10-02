@@ -12,7 +12,7 @@ The good
 
 - full customization of the text editor, a means to create plugins that can be applied to development outside of .Net
 - fast startup and runtime
-- faster access to plugins specific to languages other than C# (css, javascript, html, go, clojure, et al)
+- **faster access to plugins specific to other languages (css, javascript, html, go, clojure, haskell, elixir, ruby...the list goes on)**
 - free (and unrestricted)
 - better window management and file navigation
 - stupid fast "general" text manipulation
