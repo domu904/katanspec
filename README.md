@@ -197,8 +197,11 @@ snippet if
 - now, when you open a `cs` file, typing `if<tab>` will expand to the block above.
 - for more snippets goto: https://github.com/honza/vim-snippets/tree/master/snippets
 
-- Omnisharp. Intellesence for VIM (the vimrc provided above in this set of instructions will work with Omnisharp, you just need to install the plugin).
-  - go here for install instructions https://github.com/nosami/Omnisharp
+- Omnisharp. Intellesence for VIM (the vimrc provided above in this set of instructions **will** work with Omnisharp, you just need to install the plugin). Go here for install instructions https://github.com/nosami/Omnisharp
+
+- unstack `git clone https://github.com/mattboehm/vim-unstack`
+
+SpecWatchr (a nuget package included with this template), will write out test failures to a `stacktrace.txt` file. You can open this file, highlight lines and press `<leader>s`, (if you used the vimrc from here, your `<leader>` key is `,`). After entering that command the files associated with the stacktrace will be opened.  For more information about [unstack, visit the github page](https://github.com/mattboehm/vim-unstack).
 
 ##DONE! Now to start a kata
 
