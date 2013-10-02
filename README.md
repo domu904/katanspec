@@ -213,7 +213,7 @@ Once you've set up your environment. Here is how you start a code kata in Vim.
 - open ConEmu
 - navigate to a directory where you keep your katas
 - run the command `warmup http://github.com/amirrajan/katanspec YOURKATANAME`
-- type `vim`
+- type `vim` (for the console version) or `gvim` (for the windowed version)
 - create a git repo by entering `command` mode and typing `!git init`
 - and create your first commit by entering `command` mode and typing `!git add -A`
 - and then `!git commit -m "first commit"`
