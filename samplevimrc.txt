@@ -33,6 +33,9 @@ filetype plugin indent on
 "clojure
 nnoremap <leader>e <esc>v%:Eval<cr>
 
+"vim unstack
+let g:unstack_populate_quickfix=1
+
 " OmniSharp won't work without this setting
 filetype plugin on
 
