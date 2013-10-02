@@ -173,7 +173,9 @@ This will give you quick jump capabilities in vim. Press the `leader key` twice 
 
 Fast html creation. More info and demo on website.
 
-- Omnisharp. Intellesence for VIM (the vimrc provided above in this set of instructions **will** work with Omnisharp, you just need to install the plugin). Go here for install instructions https://github.com/nosami/Omnisharp
+- Omnisharp. `git clone https://github.com/nosami/Omnisharp.git`
+
+Intellesence for VIM (the vimrc provided above in this set of instructions **will** work with Omnisharp, you just need to install the plugin). Go here for install instructions https://github.com/nosami/Omnisharp
 
 - unstack `git clone https://github.com/mattboehm/vim-unstack`
 
