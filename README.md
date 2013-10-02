@@ -1,6 +1,6 @@
 ##NSpec code katas without Visual Studio
 
-This is a [WarmuP](https://github.com/chucknorris/warmup) template for doing code katas using NSpec (it can be used as a base template for doing any kind of .Net development in VIM, actually). This readme also contains instructions for using VIM for these code katas.  Its purpose is to really put an emphasis on the kata and test driven development in a lean development environment.  After you get the hang of it, you may find that you're as productive in vim when compared to Visual Studio.
+This is a [WarmuP](https://github.com/chucknorris/warmup) template for doing code katas using NSpec **(it can be used as a base template for doing any kind of .Net development in VIM, actually)**. This readme also contains instructions for using VIM for these code katas.  Its purpose is to really put an emphasis on the kata and test driven development in a lean development environment.  After you get the hang of it, you may find that you're as productive in vim when compared to Visual Studio.
 
 ##Why would you want to do .Net dev outside of Visual Studio?
 
